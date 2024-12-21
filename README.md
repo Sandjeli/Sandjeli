@@ -1,3 +1,4 @@
+<img href="https://scontent.fabj1-1.fna.fbcdn.net/v/t39.30808-6/470209603_2092622884500295_1723060019726657456_n.jpg?stp=c0.89.810.810a_dst-jpg_s206x206_tt6&_nc_cat=110&ccb=1-7&_nc_sid=52bb43&_nc_eui2=AeGoShCPap2sPMO299MtVGVr3We6KMF4kTjdZ7oowXiROA_l0IRJpZz5w-AtORBwIbMheNeVaBGW4mtMY6bwKmEx&_nc_ohc=HTCEJD2Kr0wQ7kNvgHAKRH1&_nc_zt=23&_nc_ht=scontent.fabj1-1.fna&_nc_gid=AFbntREtAFRlZAUakPsxFux&oh=00_AYBWQHKQlIv5JCh8YnigwOfAk1QvU0NQI8X3dLf5K9vvWg&oe=676CC020">
 - 👋 Hi, I’m @Sandjeli
 - 👀 I’m interested in ship bulding and the programation of web site, i want to learn all dies of programation
 - 🌱 I’m currently learning the navale architecture in the Université Polytechnique de San Pedro
