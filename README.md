@@ -30,6 +30,26 @@ Ce site est une vitrine de mon travail et de mes projets. J'espère qu'il vous d
 Vous pouvez me joindre à sanaabdouldjelil5@gmail.com.
 
 ---
+Voici un récapitulatif de mon profil :
+
+1. **Nom**: Abdoul Djelil Sana
+2. **Formation**: Elève ingénieur en deuxième année de construction navale
+3. **Technologies apprises**: HTML, cybersécurité
+4. **Projets de collaboration**: Intelligence artificielle, structures offshore, robotique, automatisation
+5. **Expertise**: Optimisation des performances, calcul de structure
+6. **Contact**: 
+   - Email: sanaabdouldjelil5@gmail.com
+   - LinkedIn: [Profil LinkedIn](https://linkedin.com/in/abdoul-djelil-sana-a5a072231)
+7. **Fait amusant**: Chaque jour, vous essayez de faire rire au moins une personne que vous croisez
+8. **Langages de programmation**: Python, HTML, MATLAB
+9. **Frameworks/Bibliothèques**: Django, Pandas
+10. **Outils**: Git
+11. **Projets**:
+    - Site de vente de biens immobiliers en Côte d'Ivoire
+    - Site de vente d'articles de magasin
+    - Pharmacie en ligne
+    - Site de tourisme
+12. **Objectif pour l'année prochaine**: Maîtriser le maximum de langages de programmation pour affronter le monde professionnel avec plus de confiance et de détermination
 
 <!---
 Sandjeli/Sandjeli is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
