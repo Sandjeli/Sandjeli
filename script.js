@@ -168,7 +168,66 @@ function comment4(){
         oc--
     }
 }
-
+function comment5(){
+    const trcible=document.getElementById("comt5")
+    if(oc===0){
+        trcible.classList.remove("collapse")
+        oc++
+    }else{
+        trcible.classList.add("collapse")
+        oc--
+    }
+}
+function comment6(){
+    const trcible=document.getElementById("comt6")
+    if(oc===0){
+        trcible.classList.remove("collapse")
+        oc++
+    }else{
+        trcible.classList.add("collapse")
+        oc--
+    }
+}
+function comment7(){
+    const trcible=document.getElementById("comt7")
+    if(oc===0){
+        trcible.classList.remove("collapse")
+        oc++
+    }else{
+        trcible.classList.add("collapse")
+        oc--
+    }
+}
+function comment8(){
+    const trcible=document.getElementById("comt8")
+    if(oc===0){
+        trcible.classList.remove("collapse")
+        oc++
+    }else{
+        trcible.classList.add("collapse")
+        oc--
+    }
+}
+function comment9(){
+    const trcible=document.getElementById("comt9")
+    if(oc===0){
+        trcible.classList.remove("collapse")
+        oc++
+    }else{
+        trcible.classList.add("collapse")
+        oc--
+    }
+}
+function comment10(){
+    const trcible=document.getElementById("comt10")
+    if(oc===0){
+        trcible.classList.remove("collapse")
+        oc++
+    }else{
+        trcible.classList.add("collapse")
+        oc--
+    }
+}
 //Outil 01
 function convert(){
     let message=document.querySelector('.ecran1');
