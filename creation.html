@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes créations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <button class="navbutton"><a href="index.html">Home</a></button>
+        <button class="navbutton"><a href="#">Astuces entre potes 😉</a></button>
+        <button class="navbutton"><a href="creation.html">Mes créations ❤️</a></button>
+        <div>
+            <input class="input" type="text" name="recherche" placeholder="chercher">
+            <button>chercher</button>
+        </div>
+    </nav><br>
+    <p style="margin:20px;text-align:center;">Ici vous verrez toutes mes créations en fonction de ma progression en JavaScript 😉, prenez garde mes ami(e)s ceci n'est pas toute l'étendue de ma puissance 😎</p>
+    <center><h2>Crée le 04/03/2025</h2></center>
+<div class="contour1">
+    <div class="ecran1">Selectionner le type de convertion ci-dessous </div><br><br>
+    <input id="input" type="number" placeholder="Saisir une valeur ici">
+    <select id="userSelect">
+        <option value="Km to m" selected="selected">Km to m</option>
+        <option value="m to Km">m to Km</option>
+        <option value="Kg to g">Kg to g</option>
+        <option value="g to Kg">g to Kg</option>
+        <option value="€ to fcfa">€ to fcfa</option>
+        <option value="fcfa to €">fcfa to €</option>
+        <option value="$ to fcfa">$ to fcfa</option>
+        <option value="fcfa to $">fcfa to $</option>
+    </select>
+    <button onclick="convert()">Convertir</button>
+</div>
+<hr>
+<script src="script.js"></script>
+</body>
+</html>
