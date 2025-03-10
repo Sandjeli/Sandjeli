@@ -37,6 +37,11 @@ a{
     text-transform: uppercase;
     width:90%;
 }
+.navbutton{
+    background: greenyellow;
+    font-weight: bold;
+    border-radius:10px;
+}
 li{
     font-weight: bold;
 }
@@ -46,6 +51,7 @@ legend{
 span{
     color:darkblue;
     font-weight:normal;
+    width:50%;
 }
 .école{
     font-weight: bold;
@@ -59,12 +65,13 @@ span{
     display: block;
     text-shadow: 50px;
     color: dodgerblue;
+    width:100%;
 }
 .compétence{
     background-color: cadetblue;
     border-radius: 25px;
     text-align: center;
-    width:40%;
+    width:100%;
     margin:10px 30px;
 }
 .langue{
@@ -120,6 +127,7 @@ span{
     padding: 10px;
     margin-left:25%;
     margin-right: 25%;
+    width:50%
 }
 .ecran1{
     display: block;
@@ -128,8 +136,9 @@ span{
     text-align: center;
     border:black solid;
     border-radius: 20px;
-    margin:10px;
+    margin:50px;
     padding:10px;
+    width:80%;
 }
 footer{
     height: 100px;
