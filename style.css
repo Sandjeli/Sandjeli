@@ -48,6 +48,11 @@ li{
 legend{
     text-decoration:underline;
 }
+#legend{
+    display:inline;
+    color:aliceblue;
+    background:grey;
+}
 span{
     color:darkblue;
     font-weight:normal;
