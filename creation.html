@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes créations</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="creation.css" />
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -26,7 +26,8 @@
     <center><h2>Crée le 04/03/2025</h2></center>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="col-2 border"></div>
+        <div class="col-8 border">
             <div class="contour1">
                 <div class="ecran1">Selectionner le type de convertion ci-dessous </div>
                 <input id="input" type="number" placeholder="Saisir une valeur ici">
@@ -43,9 +44,33 @@
                 <button onclick="convert()">Convertir</button>
             </div>
         </div>
+        <div class="col-2 border"></div>
+        <div class="col-12">
+                <center><h2>Crée le 14/03/2025</h2></center>
+        </div>
+        <div class="col-2 border secondary-border">
+            <span style="text-decoration: underline;">
+                <button onclick="explaine()">Comment jouer ?</button>
+            </span><br>
+        </div>
+        <div class="col-8 border secondary-border">
+            <div class="contour2">
+                <strong>Devinette</strong><br>
+                <div class="ecran2">Devine mon nombre si tu peux</div>
+                <input id="inputnumber" type="number" placeholder="Saisir votre nombre ici ">
+                <button onclick="valider()">valider</button>
+            </div>
+        </div>
+        <div class="col-2 border secondary-border">
+            <button onclick="Lancer()"><a href="creation.html" >reLancer</a></button><br><br>
+            <p id="pinterface">
+                essai max : <span id="max" style="color:green;">Infini</span><br>essai executé : <span id="executé">0</span>
+            </p>
+        </div>
+        <p class="explication"></p>
     </div>
 </div>
 <hr>
-<script src="script.js"></script>
+<script src="creation.js"></script>
 </body>
 </html>
