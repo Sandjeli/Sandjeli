@@ -1,0 +1,65 @@
+/*Outil1*/
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbutton{
+    background: greenyellow;
+    font-weight: bold;
+    border-radius:10px;
+}
+.contour1{
+    background: rgb(34, 0, 255);
+    border:black solid;
+    border-radius: 10px;
+    padding: 10px;
+    width:100%
+}
+.ecran1{
+    background: white;
+    color:black;
+    text-align: center;
+    border:black solid;
+    border-radius: 20px;
+    margin:20px 0px;
+    padding:10px;
+    width:100%;
+}
+.contour2{
+    background: cyan;
+    text-align: center;
+    border:black solid;
+    border-radius: 10px;
+    padding: 10px;
+    width:100%
+}
+.ecran2{
+    background: white;
+    color:black;
+    text-align: center;
+    border:black solid;
+    border-radius: 20px;
+    margin:20px 0px;
+    padding:10px;
+    width:100%;
+}
+#lancer{
+    margin-right:50px;
+}
+#pinterface{
+    border:4px burlywood solid;
+    border-radius:30px;
+    padding:5px;
+    text-align:justify;
+    background-color: blanchedalmond;
+    font-weight: bold;
+}
+#max{
+    color:black;
+}
+#executé{
+    color:black;
+}
+div{
+    padding:20px;
+    text-align: center;
+}
