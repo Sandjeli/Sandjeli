@@ -228,29 +228,6 @@ function comment10(){
         oc--
     }
 }
-//Outil 01
-function convert(){
-    let message=document.querySelector('.ecran1');
-let userInput=document.getElementById("input").value;
-const userSelect=document.getElementById("userSelect").value;
-let result=0;
-if(userSelect==="Km to m"){
-    result=1000*userInput;
-    message.innerHTML=userInput+' Km est équivalent à <span>'+result+' m</span>'
-
-}else if(userSelect==="m to Km"){
-    result=userInput/1000;
-    message.innerHTML=userInput+' m est équivalent à <span>'+result+' Km</span>'
-}else if(userSelect==="Kg to g"){
-    result=userInput*1000;
-    message.innerHTML=userInput+' Kg est équivalent à <span>'+result+' g</span>'
-}else if(userSelect==="g to Kg"){
-    result=userInput/1000;
-    message.innerHTML=userInput+' g est équivalent à <span>'+result+' Kg</span>'
-}else{
-    message.innerHTML="Convertion <span style='color:red'>"+userSelect+"</span> indisponible pour l'instant"
-}
-}
 
 //Remplissage Tables
 function S1(){
@@ -617,4 +594,291 @@ function affiche1(){
 document.getElementById('S2').onclick = function() {
     affiche1();
     S2();
+};
+//S3
+
+//Remplissage Tables
+function S3(){
+    let trT=document.getElementById("trT")
+    trT.classList.remove
+    //legende
+    let Tite=document.getElementById("Tite");
+    Tite.innerHTML="SEMESTRE 7";
+    //title
+    let tlt=document.getElementById("tlt");
+    tlt.innerHTML='UE SPECIALITES';
+    //LIGNE 1
+    let UE1=document.getElementById("UE1");
+    UE1.innerHTML='Projet Boucle Navire 1';
+    let ECUE1=document.getElementById("ECUE1");
+    ECUE1.innerHTML="Boucle Navire 1";
+    let créditECUE1=document.getElementById("créditECUE1");
+    créditECUE1.innerHTML='2';
+    let créditUE1=document.getElementById("créditUE1");
+    créditUE1.innerHTML='2'
+    //LIGNE 2
+    let UE2=document.getElementById("UE2");
+    UE2.innerHTML='Stabilité et calcul avancé de structure';
+    let ECUE2=document.getElementById("ECUE2");
+    ECUE2.innerHTML="Stabilité Statique du navire<br>Calcul avancé des Structures flottantes et Fatigue";
+    let créditECUE2=document.getElementById("créditECUE2");
+    créditECUE2.innerHTML='3<br>3';
+    let créditUE2=document.getElementById("créditUE2");
+    créditUE2.innerHTML='6'
+        //LIGNE 3
+        let UE3=document.getElementById("UE3");
+        UE3.innerHTML='';
+        let ECUE3=document.getElementById("ECUE3");
+        ECUE3.innerHTML='';
+        let créditECUE3=document.getElementById("créditECUE3");
+        créditECUE3.innerHTML='';
+        let créditUE3=document.getElementById("créditUE3");
+        créditUE3.innerHTML=''
+            //title
+let tlt2=document.getElementById("tlt2");
+tlt2.innerHTML='UE METHODOLOGIE';
+    //LIGNE 4
+    let UE4=document.getElementById("UE4");
+    UE4.innerHTML='Introduction à la Méthode des éléments finis';
+    let ECUE4=document.getElementById("ECUE4");
+    ECUE4.innerHTML="Techniques d'approximation de solutions des équations differentielles<br>Approche par la  Méthode des éléments Finis";
+    let créditECUE4=document.getElementById("créditECUE4");
+    créditECUE4.innerHTML='2<br>4';
+    let créditUE4=document.getElementById("créditUE4");
+    créditUE4.innerHTML='6'
+    //LIGNE 5
+    let UE5=document.getElementById("UE5");
+    UE5.innerHTML='Calcul de Structure Avancé';
+    let ECUE5=document.getElementById("ECUE5");
+    ECUE5.innerHTML=' Calcul avancé des Structures navales et offshore et Fatigue';
+    let créditECUE5=document.getElementById("créditECUE5");
+    créditECUE5.innerHTML='3';
+    let créditUE5=document.getElementById("créditUE5");
+    créditUE5.innerHTML='3'
+        //LIGNE 6
+        let UE6=document.getElementById("UE6");
+        UE6.innerHTML="Méthode des Volumes Finis";
+        let ECUE6=document.getElementById("ECUE6");
+        ECUE6.innerHTML='Méthode des Volumes Finis';
+        let créditECUE6=document.getElementById("créditECUE6");
+        créditECUE6.innerHTML='3';
+        let créditUE6=document.getElementById("créditUE6");
+        créditUE6.innerHTML='3'
+        //LIGNE 7
+        let UE7=document.getElementById("UE7");
+        UE7.innerHTML="Techniques d'Assemblage";
+        let ECUE7=document.getElementById("ECUE7");
+        ECUE7.innerHTML='Techniques de collage et de rivetage<br>Techniques de Soudage ';
+        let créditECUE7=document.getElementById("créditECUE7");
+        créditECUE7.innerHTML='2<br>4';
+        let créditUE7=document.getElementById("créditUE7");
+        créditUE7.innerHTML='6'
+    //title
+let tlt3=document.getElementById("tlt3");
+tlt3.innerHTML='UE CULTURE GENERALE';
+    //LIGNE 8
+    let UE8=document.getElementById("UE8");
+    UE8.innerHTML='Entrepreunariat et Communication';
+    let ECUE8=document.getElementById("ECUE8");
+    ECUE8.innerHTML="Anglais Technique 3<br>Entrepreunariat<br>Techniques de Redaction";
+    let créditECUE8=document.getElementById("créditECUE8");
+    créditECUE8.innerHTML='2<br>1<br>1';
+    let créditUE8=document.getElementById("créditUE8");
+    créditUE8.innerHTML='4'
+    //Ligne footer
+    let presuivant=document.getElementById("presuivant");
+    presuivant.innerHTML=''
+};
+function affiche2(){
+    let trT=document.getElementById("trT")
+    let trt=document.getElementById("trt")
+    let tr1=document.getElementById("tr1")
+    let tr2=document.getElementById("tr2")
+    let tr3=document.getElementById("tr3")
+    let trt2=document.getElementById("trt2")
+    let tr4=document.getElementById("tr4")
+    let tr5=document.getElementById("tr5")
+    let tr6=document.getElementById("tr6")
+    let tr7=document.getElementById("tr7")
+    let tr8=document.getElementById("tr8")
+    let trt3=document.getElementById("trt3")
+    //let bas=document.getElementById("bas")
+    if(oc===0){
+    trT.classList.remove('collapse')
+    trt.classList.remove('collapse')
+    tr1.classList.remove('collapse')
+    tr2.classList.remove('collapse')
+    //tr3.classList.remove('collapse')
+    trt2.classList.remove('collapse')
+    tr4.classList.remove('collapse')
+    tr5.classList.remove('collapse')
+    tr6.classList.remove('collapse')
+    tr7.classList.remove('collapse')
+    trt3.classList.remove('collapse')
+    tr8.classList.remove('collapse')
+    //bas.classList.remove('collapse')
+    oc++
+    }else{
+        trT.classList.add('collapse')
+        trt.classList.add('collapse')
+        tr1.classList.add('collapse')
+        tr2.classList.add('collapse')
+        //tr3.classList.add('collapse')
+        trt2.classList.add('collapse')
+        tr4.classList.add('collapse')
+        tr5.classList.add('collapse')
+        tr6.classList.add('collapse')
+        tr7.classList.add('collapse')
+        trt3.classList.add('collapse')
+        tr8.classList.add('collapse')
+        //bas.classList.add('collapse')
+        oc--
+    }
+}
+document.getElementById('S3').onclick = function() {
+    affiche2();
+    S3();
+};
+
+//Remplissage Tables
+function S4(){
+    let trT=document.getElementById("trT")
+    trT.classList.remove
+    //legende
+    let Tite=document.getElementById("Tite");
+    Tite.innerHTML="SEMESTRE 8";
+    //title
+    let tlt=document.getElementById("tlt");
+    tlt.innerHTML='UE SPECIALITES';
+    //LIGNE 1
+    let UE1=document.getElementById("UE1");
+    UE1.innerHTML='Systemes Hydrauliques';
+    let ECUE1=document.getElementById("ECUE1");
+    ECUE1.innerHTML="Pompes , Turbines et Verins";
+    let créditECUE1=document.getElementById("créditECUE1");
+    créditECUE1.innerHTML='3';
+    let créditUE1=document.getElementById("créditUE1");
+    créditUE1.innerHTML='3'
+    //LIGNE 2
+    let UE2=document.getElementById("UE2");
+    UE2.innerHTML="Méthode avancée de l'élément fini";
+    let ECUE2=document.getElementById("ECUE2");
+    ECUE2.innerHTML="Calcul de structure flottante par élément fini";
+    let créditECUE2=document.getElementById("créditECUE2");
+    créditECUE2.innerHTML='3';
+    let créditUE2=document.getElementById("créditUE2");
+    créditUE2.innerHTML='3'
+        //LIGNE 3
+        let UE3=document.getElementById("UE3");
+        UE3.innerHTML='Projet et Organisation de Chantier Naval et Offshore';
+        let ECUE3=document.getElementById("ECUE3");
+        ECUE3.innerHTML='Boucle Navire 2<br>Organisation de Chantier Naval et Offshore';
+        let créditECUE3=document.getElementById("créditECUE3");
+        créditECUE3.innerHTML='2<br>2';
+        let créditUE3=document.getElementById("créditUE3");
+        créditUE3.innerHTML='4'
+            //title
+let tlt2=document.getElementById("tlt2");
+tlt2.innerHTML='UE METHODOLOGIE';
+    //LIGNE 4
+    let UE4=document.getElementById("UE4");
+    UE4.innerHTML='Traitement des Matériaux';
+    let ECUE4=document.getElementById("ECUE4");
+    ECUE4.innerHTML="Méthode des Eléments Finis structures<br>Construction en Bois";
+    let créditECUE4=document.getElementById("créditECUE4");
+    créditECUE4.innerHTML='3<br>3';
+    let créditUE4=document.getElementById("créditUE4");
+    créditUE4.innerHTML='6'
+    //LIGNE 5
+    let UE5=document.getElementById("UE5");
+    UE5.innerHTML='Machines Thermiques et électriques';
+    let ECUE5=document.getElementById("ECUE5");
+    ECUE5.innerHTML='Machines Thermiques<br>Machines électriques';
+    let créditECUE5=document.getElementById("créditECUE5");
+    créditECUE5.innerHTML='2<br>3';
+    let créditUE5=document.getElementById("créditUE5");
+    créditUE5.innerHTML='5'
+        //LIGNE 6
+        let UE6=document.getElementById("UE6");
+        UE6.innerHTML="Propulsion";
+        let ECUE6=document.getElementById("ECUE6");
+        ECUE6.innerHTML="Resistance à l'avancement<br>Systèmes de Propulsion";
+        let créditECUE6=document.getElementById("créditECUE6");
+        créditECUE6.innerHTML='3<br>3';
+        let créditUE6=document.getElementById("créditUE6");
+        créditUE6.innerHTML='6'
+        //LIGNE 7
+        let UE7=document.getElementById("UE7");
+        UE7.innerHTML="";
+        let ECUE7=document.getElementById("ECUE7");
+        ECUE7.innerHTML='';
+        let créditECUE7=document.getElementById("créditECUE7");
+        créditECUE7.innerHTML='';
+        let créditUE7=document.getElementById("créditUE7");
+        créditUE7.innerHTML=''
+    //title
+let tlt3=document.getElementById("tlt3");
+tlt3.innerHTML='UE CULTURE GENERALE';
+    //LIGNE 8
+    let UE8=document.getElementById("UE8");
+    UE8.innerHTML='Gestion de Projet et Communication';
+    let ECUE8=document.getElementById("ECUE8");
+    ECUE8.innerHTML="Gestion de Projet<br>Anglais maritime 1";
+    let créditECUE8=document.getElementById("créditECUE8");
+    créditECUE8.innerHTML='1<br>2';
+    let créditUE8=document.getElementById("créditUE8");
+    créditUE8.innerHTML='3'
+    //Ligne footer
+    let presuivant=document.getElementById("presuivant");
+    presuivant.innerHTML=''
+};
+function affiche3(){
+    let trT=document.getElementById("trT")
+    let trt=document.getElementById("trt")
+    let tr1=document.getElementById("tr1")
+    let tr2=document.getElementById("tr2")
+    let tr3=document.getElementById("tr3")
+    let trt2=document.getElementById("trt2")
+    let tr4=document.getElementById("tr4")
+    let tr5=document.getElementById("tr5")
+    let tr6=document.getElementById("tr6")
+    let tr7=document.getElementById("tr7")
+    let tr8=document.getElementById("tr8")
+    let trt3=document.getElementById("trt3")
+    //let bas=document.getElementById("bas")
+    if(oc===0){
+    trT.classList.remove('collapse')
+    trt.classList.remove('collapse')
+    tr1.classList.remove('collapse')
+    tr2.classList.remove('collapse')
+    tr3.classList.remove('collapse')
+    //trt2.classList.remove('collapse')
+    tr4.classList.remove('collapse')
+    tr5.classList.remove('collapse')
+    tr6.classList.remove('collapse')
+    //tr7.classList.remove('collapse')
+    trt3.classList.remove('collapse')
+    tr8.classList.remove('collapse')
+    //bas.classList.remove('collapse')
+    oc++
+    }else{
+        trT.classList.add('collapse')
+        trt.classList.add('collapse')
+        tr1.classList.add('collapse')
+        tr2.classList.add('collapse')
+        tr3.classList.add('collapse')
+        //trt2.classList.add('collapse')
+        tr4.classList.add('collapse')
+        tr5.classList.add('collapse')
+        tr6.classList.add('collapse')
+        //tr7.classList.add('collapse')
+        trt3.classList.add('collapse')
+        tr8.classList.add('collapse')
+        //bas.classList.add('collapse')
+        oc--
+    }
+}
+document.getElementById('S4').onclick = function() {
+    affiche3();
+    S4();
 };
