@@ -1,0 +1,15 @@
+footer{
+    height: 100px;
+    color:white;
+    border:2px blue solid;
+    background: black;
+    text-align: center;
+    margin:20px 0px 0px 0px;
+}
+nav{
+    background: blue;
+}
+a{
+    color:rgb(0, 242, 255);
+    font-weight: bold;
+}
