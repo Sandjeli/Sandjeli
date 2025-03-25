@@ -98,6 +98,9 @@ span{
     width:40%;
     margin:10px 30px;
 }
+.row{
+    margin:0px;
+}
 
 #gauche{
     display: flex;
