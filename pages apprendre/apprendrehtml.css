@@ -1,7 +1,15 @@
 nav{
+    display:block;
     background: blue;
 }
-a{
-    color:rgb(0, 242, 255);
+.navbutton{
+    background: greenyellow;
     font-weight: bold;
+    border-radius:10px;
+    margin: 5px;
+}
+#Sommaire{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:5px;
 }
