@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="apprendrehtml.css"/>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="apprendrehtml.html" title="Raffraichir la page">Apprendre HTML5</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+              <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+              <a class="nav-link" href="#">Astuce</a>
+              <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</head>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Introduction</li>
+        </ol>
+      </nav>
+</div>
+<br>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#chap1">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="chapitre3.html#chap4">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre3.html#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7.html#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+</div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">12 Minutes</span>
+    </p>
+    <br>
+    <h1 id="intro">I.Introduction</h1>
+    <p>
+        Ce cours permet d'obtenir les bases dans le langage de balisage HTML (Hypertext Markup Language), qui a été conçu pour représenter les pages web. Pour développer son premier site web, il faut commencer par comprendre grossièrement comment fonctionne un site. Un site web est un ensemble de fichiers ordonnés, hébergés sur un serveur web. L'hébergement web permet que le site soit accessible depuis internet. Cependant, on peut également reproduire un hébergement web en local, à l'aide de différents outils ; c'est-à-dire que le site sera accessible uniquement depuis son poste. C'est utile en phase de développement car on reproduit le futur environnement du site sans pour autant qu'il soit accessible au plus grand nombre. Comme tous les langages informatiques, le HTML évolue au fil du temps. Créé pour représenter des pages web au début des années 1990, par un certain<a href="https://www.bing.com/ck/a?!&&p=1ca89f764abb9d929ef0d22b2c0421e28357eeded1ba65e7d81070e0392779c8JmltdHM9MTc0MzEyMDAwMA&ptn=3&ver=2&hsh=4&fclid=3b56037d-76bc-65b1-02f8-10bd77776451&psq=Tim+Berners-Lee&u=a1aHR0cHM6Ly9mci53aWtpcGVkaWEub3JnL3dpa2kvVGltX0Jlcm5lcnMtTGVl&ntb=1"> Tim Berners-Lee</a>, le HTML en est aujourd'hui à sa 5ème version, le HTML5. C'est le <a href="https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C</a> qui gère, encadre et définit plusieurs langages informatiques, notamment liés au web, dont le HTML. Tim Berners-Lee suit encore et garde un œil attentif à l'évolution du web au sein du W3C.
+    </p>
+    <h2>Qu’est-ce que le HTML ?</h2>
+    <p>
+        <ul>
+            <li>HTML est l’abréviation de Hyper Text Markup Language</li>
+            <li>HTML est le langage de balisage standard pour la création de pages Web</li>
+            <li>HTML décrit la structure d’une page Web</li>
+            <li>HTML se compose d’une série d’éléments</li>
+            <li>Les éléments HTML indiquent au navigateur comment afficher le contenu</li>
+            <li>Les éléments HTML étiquettent des éléments de contenu tels que «ceci est un en-tête», «ceci est un paragraphe», «ceci est un lien», etc.</li>
+        </ul>
+        Maintenant que le décor est planté, on va pouvoir attaquer les choses plus sérieuses. Rendez-vous au chapitre suivant.
+    </p><br><hr>
+    <h1 id="chap1">II.Chapitre 1 : Le navigateur et l'éditeur de texte</h1>
+    <p>De quoi va-t-on avoir besoin pour créer un site web ? De quels logiciels hyper complexes et méga chers ?</p>
+    <h2>1)Navigateur web</h2>
+    <p>Les navigateurs web sont gratuits et parfaitement accessibles. Ils sont utilisés quotidiennement par la planète entière. Le rôle du navigateur web est d'interpréter des fichiers informatiques pour les afficher visuellement à un utilisateur. Entre deux navigateurs, l'interprétation peut diverger. Certaines instructions peuvent ne pas être connues ou être interprétées différemment. Nous reviendrons sur cette notion dans le cours sur le CSS.
+        De plus, avec l'avènement des smartphones, à peu près tous les navigateurs se déclinent en version mobile. Il y a également de légères différences.</p>
+    <h2>2)Liste non exhaustive de navigateurs web</h2>
+    <table class="table table-responsive table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Environnement/Système d'exploitation</th>
+                <th>Moteur de rendu (cœur)</th>
+                <th>Site</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Firefox</td>
+                <td>Linux, Mac OS, Windows, Android, iOS</td>
+                <td>Gecko</td>
+                <td><a href="https://firefox.com/" title="aperçu de firefox" target="_blank">https://firefox.com/</a></td>
+            </tr>
+            <tr>
+                <td>Chrome</td>
+                <td>Linux, Mac OS, Windows, Android, iOS</td>
+                <td>Blink</td>
+                <td><a href="https://google.com/chrome/browser/" title="aperçu de Chrome" target="_blank">https://google.com/chrome/browser/</a></td>
+            </tr>
+            <tr>
+                <td>Vivaldi</td>
+                <td>Linux, Mac OS, Windows</td>
+                <td>Blink</td>
+                <td><a href="https://vivaldi.com/" title="aperçu de Vivaldi" target="_blank">https://vivaldi.com/</a></td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>Mac OS, iOS</td>
+                <td>WebKit</td>
+                <td><a href="https://www.apple.com/fr/safari/" title="aperçu de Safari" target="_blank">https://www.apple.com/fr/safari/</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>3)L'éditeur de texte</h2>
+    <p>Le second logiciel dont nous allons avoir besoin est également gratuit et est installé par défaut sur tous les ordinateurs équipés du système d'exploitation Windows : le bloc-notes. Aussi incroyable que cela puisse paraître, ce petit outil permet de créer des sites web. Alors, vous vous posez peut-être une excellente question : est-ce que Mark Zuckerberg a créé la première version de Facebook avec ça ? Je ne peux le garantir à 100% mais j'ai bien peur que non. Pour deux raisons très simples. Mark travaillait sur Mac OS et ne profitait donc pas du merveilleux bloc-notes Windows. La deuxième raison, et vous vous en doutiez sûrement, est qu'il en existe des plus ergonomiques et performants. Le bloc-notes et les autres logiciels que nous allons découvrir appartiennent à la famille des éditeurs de texte. Je te vois venir gros comme une maison Lorraine Atta, non Microsoft Word n'est pas un éditeur de texte mais un logiciel de traitement de texte. Avec Word, on met en forme le texte. On y ajoute des tableaux, de la couleur, des graphiques, etc., alors qu'avec un éditeur de texte, on écrit tout simplement et uniquement du texte.</p>
+    <fieldset>
+        <legend>Notepad++</legend>
+        <img class="editeuraperçu" src="../ressources html/editeur.png" alt="image de note-pad">
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Visual Code</legend>
+        <img class="editeuraperçu" src="../ressources html/editeur1.png" alt="image de visual code">
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Bloc note</legend>
+        <img class="editeuraperçu" src="../ressources html/editeur2.png" alt="image de bloc-note">
+    </fieldset>
+    <br><hr>
+    <h2>4)Liste non exhaustive d'éditeurs de texte</h2>
+    <table class="table table-responsive table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Environnement/Système d'exploitation</th>
+                <th>Site</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Notepad++</td>
+                <td>Windows</td>
+                <td><a href="https://notepad-plus-plus.org/" title="aperçu de Notepad++" target="_blank">https://notepad-plus-plus.org/</a></td>
+            </tr>
+            <tr>
+                <td>Sublime Text</td>
+                <td>Linux, Mac OS, Windows</td>
+                <td><a href="http://www.sublimetext.com/" title="aperçu de sublimetext" target="_blank">http://www.sublimetext.com/</a></td>
+            </tr>
+            <tr>
+                <td>Coda</td>
+                <td>Mac OS</td>
+                <td><a href="https://panic.com/coda/" title="aperçu de Coda" target="_blank">https://panic.com/coda/</a></td>
+            </tr>
+            <tr>
+                <td>Atom</td>
+                <td>Linux, Mac OS, Windows</td>
+                <td><a href="https://atom.io/" title="aperçu de Atom" target="_blank">hhttps://atom.io/</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Pour continuer dans les chapitres suivants, vous devrez avoir l'un des éditeurs de texte ci-dessus ou un autre d'installé sur votre poste de travail.</p>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="../ressources html/Quiz.html" title="passer au Quiz">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+<button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="#">Chapitre Précedent</a></button>
+<button id="basbuttonend" class="basbutton rounded float-end"><a href="chapitre2.html" title="passer au chapitre 2">Chapitre Suivant</a></button>
+</body>
+<br><br>
+<footer>Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>
