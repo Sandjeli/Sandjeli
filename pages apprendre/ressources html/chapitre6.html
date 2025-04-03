@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveau 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="chapitre6.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="#chap4">Chapitre 4</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Niveau 4</li>
+        </ol>
+    </nav>
+</div>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#intro">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="#chap4"">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre4.html#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">15 Minutes</span>
+    </p>
+    <h1 id="chap4">V.Chapitre 4 - Écrire une page en HTML5</h1>
+    <h2 id="niv4">Niveau 4</h2>
+    <p>
+      On continue notre apprentissage du HTML5 avec plein de nouvelles balises. 
+      Vous avez peut-être été frustré de n'en apprendre que deux dans le chapitre précédent ? 
+      Attendez-vous dans ce chapitre à en découvrir beaucoup plus.
+    </p>
+    <h2>1)Les tableaux</h2>
+    <p>
+      Les précédentes balises étaient là pour vous mettre dans le bain de ce nouveau chapitre. Les tableaux en HTML ne sont pas compliqués mais demandent un peu de rigueur. Nous allons aborder pas moins de 7 nouvelles balises. Une fois cette partie du cours assimilée, vous pourrez intégrer des tableaux simples dans vos pages HTML.
+    </p>
+    <h3>a)La balise &lttable&gt</h3>
+    <p>
+      Elle permet d'ajouter un tableau à notre page, son nom indique clairement son utilité. 
+    Elle permet de déclarer un nouveau tableau. Elle englobe la totalité de ce dernier 
+    On commence toujours par une balise ouvrante <span class="balise">&lttable&gt</span> et on termine toujours par une balise fermante <span class="balise">&lt/table&gt</span>.
+    </p>
+    <h3>b)La balise &lttr&gt</h3>
+    <p>
+      Les tableaux en HTML sont organisés en lignes et cellules. Une ligne peut avoir une ou plusieurs cellules. La balise qui permet de représenter une ligne est <span class="balise">&lttr&gt</span>. C'est donc cette balise <span class="balise">&lttr&gt</span> qui englobe les cellules.
+    </p>
+    <h3>c)La balise &lttd&gt</h3>
+    <p>
+      Comme expliqué précédemment, les tableaux en HTML sont organisés en lignes et en cellules. Les lignes sont représentées par les balises <span class="balise">&lttr&gt</span>
+        , tandis que les cellules sont représentées par la balise <span class="balise">&lttd&gt</span>. Il peut donc y avoir une ou plusieurs balises <span class="balise">&lttd&gt</span> à l'intérieur d'un <span class="balise">&lttr&gt</span>.<br><br>
+        A ce stade et avec les balises que nous venons de découvrir, nous pouvons déjà créer un tableau basique c'est pas dohi. Sellez votre monture, on se lance.
+    </p>
+  <div class="flex">
+      <div class="ratio" style="--bs-aspect-ratio: 95%;">
+          <div class="containecode">
+                  <code>
+                    <span class="balise">&lth1&gt</span>Mes Animés préférés<span class="balise">&lt/h1&gt</span><br>
+                    <span class="balise">&lttable&gt</span><br>
+                    <span class="balise">&lttr&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Naruto<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Seven deadly<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Hunter x Hunter<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lt/tr&gt</span><br>
+                    <span class="balise">&lttr&gt</span><br>
+                        <span class="balise">&lttd&gt</span>Solo leving<span class="balise">&lt/td&gt</span><br>
+                        <span class="balise">&lttd&gt</span>DBZ<span class="balise">&lt/td&gt</span><br>
+                        <span class="balise">&lttd&gt</span>Toriko<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lt/tr&gt</span><br>
+                    <span class="balise">&lttr&gt</span><br>
+                        <span class="balise">&lttd&gt</span>Boji<span class="balise">&lt/td&gt</span><br>
+                        <span class="balise">&lttd&gt</span>Baki<span class="balise">&lt/td&gt</span><br>
+                        <span class="balise">&lttd&gt</span>Death note<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lt/tr&gt</span><br>
+                    <span class="balise">&lt/table&gt</span>
+                  </code>
+          </div>
+        </div>
+        <div class="ratio" style="--bs-aspect-ratio: 50%;">
+          <div>
+              <h4><center>Resultat</center></h4><br>
+              <h1>Mes Animés préférés</h1>
+<table>
+<tr>
+<td>Naruto</td>
+<td>Seven deadly</td>
+<td>Hunter x Hunter</td>
+</tr>
+<tr>
+<td>Solo leving</td>
+<td>DBZ</td>
+<td>Toriko</td>
+</tr>
+<tr>
+<td>Boji</td>
+<td>Baki</td>
+<td>Death note</td>
+</tr>
+</table>
+          </div>
+        </div>
+  </div>
+  <p>
+    Nous sommes au chapitre 8 et nos mise en forme son toujours aussi merdique. là on touche le fond avecc les tableaux cependant on retrouve tout de même ce que l'on cherche, 
+    une organisation en lignes et en cellules. On a bien trois lignes de trois cellules. Vous l'avez peut-être remarqué, il manque les cellules d'en-tête du tableau. 
+    On règle ce problème tout de suite.
+  </p>
+  <p class="alert alert-warning">
+    Notre HTML pur et dur restera sans saveur jusqu'à ce que nous ajoutions des styles. Pour rappel, cette mise en forme se réalise à l'aide du <b>CSS</b>. 
+    Toutefois, si on souhaite faire un test d'affichage et voir des bordures pour les cellules, on peut ajouter l'attribut <span style="color:orange">border</span> sur la balise <span class="balise">&lttable&gt</span>.
+     Cet attribut détermine en pixels la taille de la bordure de chaque cellule. Exemple <span class="balise">&lttable <span style="color:orange">border</span>=<span style="color:green">"1"</span>&gt</span> permettra d'obtenir des bordures d'1 pixel pour tous les côtés.
+  </p>
+  <h3>d)La balise &ltth&gt</h3>
+  <p>
+    La balise HTML <span class="balise">&ltth&gt</span> permet de définir une celulle d'en-tête pour un tableau. Elle se place tout comme la balise <span class="balise">&lttd&gt</span> à l'intérieur d'une ligne <span class="balise">&lttr&gt</span>. 
+      On retrouve dans une ligne, une ou plusieurs balises d'en-tête. Ci-après l'évolution de notre tableau.
+  </p>
+<div class="flex">
+    <div class="ratio" style="--bs-aspect-ratio: 120%;">
+        <div class="containecode">
+                <code>
+                  <span class="balise">&lth1&gt</span>Mes Animés préférés<span class="balise">&lt/h1&gt</span><br>
+                  <span class="balise">&lttable&gt</span><br>
+                  <span class="balise">&lttr&gt</span><br>
+                  <span class="balise">&ltth&gt</span>Groupe 1<span class="balise">&lt/th&gt</span><br>
+                  <span class="balise">&ltth&gt</span>Groupe 2<span class="balise">&lt/th&gt</span><br>
+                  <span class="balise">&ltth&gt</span>Groupe 3<span class="balise">&lt/th&gt</span><br>
+                  <span class="balise">&lt/tr&gt</span><br>
+                  <span class="balise">&lttr&gt</span><br>
+                  <span class="balise">&lttd&gt</span>Naruto<span class="balise">&lt/td&gt</span><br>
+                  <span class="balise">&lttd&gt</span>Seven deadly<span class="balise">&lt/td&gt</span><br>
+                  <span class="balise">&lttd&gt</span>Hunter x Hunter<span class="balise">&lt/td&gt</span><br>
+                  <span class="balise">&lt/tr&gt</span><br>
+                  <span class="balise">&lttr&gt</span><br>
+                      <span class="balise">&lttd&gt</span>Solo leving<span class="balise">&lt/td&gt</span><br>
+                      <span class="balise">&lttd&gt</span>DBZ<span class="balise">&lt/td&gt</span><br>
+                      <span class="balise">&lttd&gt</span>Toriko<span class="balise">&lt/td&gt</span><br>
+                  <span class="balise">&lt/tr&gt</span><br>
+                  <span class="balise">&lttr&gt</span><br>
+                      <span class="balise">&lttd&gt</span>Boji<span class="balise">&lt/td&gt</span><br>
+                      <span class="balise">&lttd&gt</span>Baki<span class="balise">&lt/td&gt</span><br>
+                      <span class="balise">&lttd&gt</span>Death note<span class="balise">&lt/td&gt</span><br>
+                  <span class="balise">&lt/tr&gt</span><br>
+                  <span class="balise">&lt/table&gt</span>
+                </code>
+        </div>
+      </div>
+      <div class="ratio" style="--bs-aspect-ratio: 50%;">
+        <div>
+            <h4><center>Resultat</center></h4><br>
+            <h1>Mes Animés préférés</h1>
+            <h1>Mes Animés préférés</h1>
+            <table>
+            <tr>
+            <th>Groupe 1</th>
+            <th>Groupe 2</th>
+            <th>Groupe 3</th>
+            </tr>
+            <tr>
+            <td>Naruto</td>
+            <td>Seven deadly</td>
+            <td>Hunter x Hunter</td>
+            </tr>
+            <tr>
+            <td>Solo leving</td>
+            <td>DBZ</td>
+            <td>Toriko</td>
+            </tr>
+            <tr>
+            <td>Boji</td>
+            <td>Baki</td>
+            <td>Death note</td>
+            </tr>
+            </table>
+        </div>
+      </div>
+</div>
+<h3>e)Autres balises</h3>
+<p>
+  Pour améliorer la lisibilité de votre code mais également pour cibler davantage vos éléments en CSS, vous pouvez avoir recours aux balises suivantes :
+  <ul>
+    <li><span class="balise">&ltthead&gt</span> : cette balise permet d'englober la ou les lignes dans lesquelles sont définis les en-têtes des colonnes.</li>
+    <li><span class="balise">&lttbody&gt</span> : cette balise permet d'englober la ou les lignes qui constituent le corps du tableau.</li>
+    <li><span class="balise">&lttfoot&gt</span> : cette balise permet d'englober la ou les lignes qui forment le pied du tableau. On retrouve parfois dans cette zone des résumés des colonnes.</li>
+  </ul>
+  <p>Ces balises sont facultatives. Vous pouvez les utiliser toutes dans le même tableau, ou seulement une, voir même aucune.</p>
+</p>
+<h3>f)Attributs clés <span class="balise">colspan=""</span> et <span class="balise">rowspan=""</span></h3>
+<p>
+  Les attributs <span class="balise">colspan=""</span> et <span class="balise">rowspan=""</span> se placent uniquement sur la balise <span class="balise">&lttd&gt</span>. Ils permettent d'étendre la cellule sur plusieurs colonnes ou lignes. L'attribut <span class="balise">rowspan=""</span> permet d'étendre une celulle sur plusieurs lignes tandis que <span class="balise">colspan=""</span> permet d'étendre la cellule sur plusieurs colonnes. Ci-après un exemple d'utilisation.
+</p>
+<div class="flex">
+  <div class="ratio" style="--bs-aspect-ratio: 130%;">
+      <div class="containecode">
+              <code>
+                <span class="balise">&lth1&gt</span>Mes Animés préférés<span class="balise">&lt/h1&gt</span><br>
+                <span class="balise">&lttable&gt</span><br>
+                <span class="balise">&lttr&gt</span><br>
+                <span class="balise">&ltth&gt</span>Groupe 1<span class="balise">&lt/th&gt</span><br>
+                <span class="balise">&ltth&gt</span>Groupe 2<span class="balise">&lt/th&gt</span><br>
+                <span class="balise">&ltth&gt</span>Groupe 3<span class="balise">&lt/th&gt</span><br>
+                <span class="balise">&lt/tr&gt</span><br>
+                <span class="balise">&lttr&gt</span><br>
+                <span class="balise">&lttd&gt</span>Naruto<span class="balise">&lt/td&gt</span><br>
+                <span class="balise">&lttd rowspan="2"&gt</span>Seven deadly<span class="balise">&lt/td&gt</span><br>
+                <span class="balise">&lt/tr&gt</span><br>
+                <span class="balise">&lttr&gt</span><br>
+                <span class="balise">&lttd colspan="3"&gt</span><span class="balise">&lt/td&gt</span><br>
+                <span class="balise">&lt/tr&gt</span><br>
+                <span class="balise">&lttr&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Solo leving<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lttd&gt</span>DBZ<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Toriko<span class="balise">&lt/td&gt</span><br>
+                <span class="balise">&lt/tr&gt</span><br>
+                <span class="balise">&lttr&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Boji<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Baki<span class="balise">&lt/td&gt</span><br>
+                    <span class="balise">&lttd&gt</span>Death note<span class="balise">&lt/td&gt</span><br>
+                <span class="balise">&lt/tr&gt</span><br>
+                <span class="balise">&lt/table&gt</span>
+              </code>
+      </div>
+    </div>
+    <div class="ratio" style="--bs-aspect-ratio: 50%;">
+      <div>
+          <h4><center>Resultat</center></h4><br>
+          <h1>Mes Animés préférés</h1>
+<table border="1px">
+<tr>
+<th>Groupe 1</th>
+<th>Groupe 2</th>
+<th>Groupe 3</th>
+</tr>
+<tr>
+<td>Naruto</td>
+<td rowspan="2">Seven deadly</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>Solo leving</td>
+<td>DBZ</td>
+<td>Toriko</td>
+</tr>
+<tr>
+<td>Boji</td>
+<td>Baki</td>
+<td>Death note</td>
+</tr>
+</table>
+      </div>
+    </div>
+</div>
+<h2>g)La balise &ltdetails&gt</h2>
+<p class="alert alert-danger">
+  Attention, la &ltdetails&gt ne fonctionne pas sous le navigateur Internet Explorer.
+</p>
+<p>
+  permet de faire apparaître ou disparaître une zone de contenu. La balise <span class="balise">&ltdetails&gt</span> est accompagnée de la balise <span class="balise">&ltsummary&gt</span> qui correspond au titre qui permettra de déplier et replier le bloc de contenu.
+  Nous avons aussi l'attribut <span style="color:orange">open=""</span> qui permet de définir le comportement par défaut de la balise <span class="balise">&ltdetails&gt</span>. Si l'attribut <span style="color:orange">open=""</span> n'est pas précisé, alors le bloc de contenu est caché. 
+  Si à l'inverse l'attribut a pour valeur <span style="color:green">true</span>, alors celui-ci est visible.
+</p>
+<div class="flex">
+  <div class="ratio" style="--bs-aspect-ratio: 95%;">
+      <div class="containecode">
+              <code>
+                <span class="balise">&ltdetails&gt</span><br>
+                <span class="balise">&ltsummary&gt</span>Mes Animés préférés<span class="balise">&lt/summary&gt</span><br>
+                <span class="balise">&ltp&gt</span>mes coupds de coeur :<span class="balise">&lt/p&gt</span><br>
+                <span class="balise">&ltul&gt</span><br>
+                <span class="balise">&ltli&gt</span>Naruto<span class="balise">&lt/li&gt</span><br>
+                <span class="balise">&ltli&gt</span>Seven deadly<span class="balise">&lt/li&gt</span><br>
+                <span class="balise">&ltli&gt</span>Hunter x Hunter<span class="balise">&lt/li&gt</span><br>
+                <span class="balise">&lt/ul&gt</span><br>
+                <span class="balise">&lt/details&gt</span>
+                <br>
+                <span class="balise">&ltdetails open="true"&gt</span><br>
+                <span class="balise">&ltsummary&gt</span>Mes Animés préférés<span class="balise">&lt/summary&gt</span><br>
+                <span class="balise">&ltp&gt</span>mes coupds de coeur :<span class="balise">&lt/p&gt</span><br>
+                <span class="balise">&ltul&gt</span><br>
+                <span class="balise">&ltli&gt</span>Naruto<span class="balise">&lt/li&gt</span><br>
+                <span class="balise">&ltli&gt</span>Seven deadly<span class="balise">&lt/li&gt</span><br>
+                <span class="balise">&ltli&gt</span>Hunter x Hunter<span class="balise">&lt/li&gt</span><br>
+                <span class="balise">&lt/ul&gt</span><br>
+                <span class="balise">&lt/details&gt</span>
+              </code>
+      </div>
+    </div>
+    <div class="ratio" style="--bs-aspect-ratio: 50%;">
+      <div>
+        <b>Sans Attribut open</b><br>
+        <details>
+          <summary>Mes Animés préférés</summary>
+          <p>mes coupds de coeur :</p>
+          <ul>
+          <li>Naruto</li>
+          <li>Seven deadly</li>
+          <li>Hunter x Hunter</li>
+          </ul>
+          </details>
+          <br>
+          <b>Avec Attribut open</b><br>
+          <details open="true">
+            <summary>Mes Animés préférés</summary>
+            <p>mes coupds de coeur :</p>
+            <ul>
+            <li>Naruto</li>
+            <li>Seven deadly</li>
+            <li>Hunter x Hunter</li>
+            </ul>
+            </details>
+      </div>
+    </div>
+</div>
+<h2>h)Les balises &ltsub&gt et &ltsup&gt</h2>
+<p>
+  Ces balises permettent d'afficher un texte en <b>indice</b> ou en <b>exposant</b>. Simple et efficace, un exemple d'utilisation ci-dessous.
+</p>
+<div class="flex">
+  <div class="ratio" style="--bs-aspect-ratio: 20%;">
+      <div class="containecode">
+              <code>
+                <span class="balise">&ltp&gt</span><br>
+                Je ne connais pas grand chose à la physique mais E = mc<span class="balise">&ltsup&gt</span>2<span class="balise">&lt/sup&gt</span>.<br>
+                La molécule d'eau a pour formule H<span class="balise">&ltsub&gt</span>2<span class="balise">&lt/sub&gt</span>O..
+                <span class="balise">&lt/p&gt</span>
+              </code>
+      </div>
+    </div>
+    <div class="ratio" style="--bs-aspect-ratio: 20%;">
+      <div>
+          <h4><center>Resultat</center></h4>
+          <p>
+            Je ne connais pas grand chose à la physique mais E = mc<sup>2</sup>.<br>
+             La molécule d'eau a pour formule H<sub>2</sub>O.. </p>
+      </div>
+    </div>
+</div>
+<p>
+  Ce nouveau chapitre nous a permis de découvrir de nouvelles balises simples mais aussi les tableaux, une notion incontournable mais un peu plus rigoureuse que le reste.
+  Dans le prochain et dernier chapitre, nous aborderons les formulaires.
+</p>
+
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quiz6.html">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+    <button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="chapitre5.html">Chapitre Précedent</a></button>
+    <button id="basbuttonend" class="basbutton rounded float-end"><a href="chapitre7.html" title="passer au chapitre 7">Chapitre Suivant</a></button>
+</body>
+<br><br>
+<footer style="color: beige;">Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>

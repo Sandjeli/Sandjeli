@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveau 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="chapitre4.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="#chap4">Chapitre 4</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Niveau 2</li>
+        </ol>
+    </nav>
+</div>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#intro">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="#chap4">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre3.html#niv1">Niveau 1</a></li>
+                <li><a href="#niv2">Niveaux 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7.html#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">15 Minutes</span>
+    </p>
+
+    <h1 id="chap4">V.Chapitre 4 - Écrire une page en HTML5</h1>
+    
+    <h2 id="niv2">Niveau 2</h2>
+    <p>
+        Nous avons découvert dans le chapitre précédent de nombreuses balises HTML. 
+        Nous progressons dans l'apprentissage des différentes balises du langage. Cependant, nous allons faire une pause dans la découverte des balises pour nous attarder sur d'autres notions essentielles.
+    </p>
+    
+    <h3>1)Les Commentaires</h3>
+    <p>
+        Dans l'introduction du chapitre,j'ai précisé que nous ne découvrirons pas de nouvelles balises dans celui-ci. 
+        et bien c'est <b>dohi</b>... La notion de commentaires existe dans la quasi-totalité des langages informatiques. Il s'agit d'un texte qui a pour but d'ajouter des notes explicatives dans vos fichiers. 
+        Ils n'ont pas d'impact sur la mise en forme de la page et ne s'affichent pas à l'utilisateur.<br> <span class="balise">&lt!--Mon premier commentaire --&gt</span>
+    </p>
+    <p class="alert alert-warning">
+        Il est important de faire attention à ne pas inclure plusieurs tirets dans un commentaire. Cela peut provoquer des erreurs d'interprétation par le navigateur. Pour éviter cette erreur fréquente, considérez qu'on ne peut pas mettre de tiret à l'intérieur d'un commentaire.
+    </p>
+    <h2>2)Code source</h2>
+    <p>
+        Comme expliqué ci-dessus, les commentaires ne s'affichent pas à l'utilisateur. 
+        Oui à une exception près. Chaque visiteur d'un site peut afficher le <b>code source</b> d'une page. 
+        Cela aura pour effet d'afficher ce que contient votre fichier HTML. Pour ce faire, il suffit de faire <span class="noir">CLIC DROIT</span> + <span class="noir">Afficher le code source</span> ou <span class="noir">CTRL</span> + <span class="noir">U</span> sur n'importe quelle page web. 
+        Le code HTML de tous les sites est donc public et accessible par tout le monde. On y découvre également les commentaires. 
+        Il faut tout de même être vigilant à ce qu'ils contiennent.
+    </p>
+    <p class="alert alert-warning">
+        Si vous jetez un œil aux codes sources de certains sites, vous ne devez pas prendre peur s'ils vous paraissent très compliqués, très longs ou ne pas respecter certaines règles que nous avons apprises. 
+        Tous les sites ne sont pas encore écrits en HTML5. D'autres ne respectent pas certains standards pour des raisons qui leurs sont propres. Enfin, certains utilisent d'autres technologies qui ont pour conséquence de générer du code HTML imbuvable pour un utilisateur.
+    </p>
+    
+    <h2>3)Inspecteur d'élément</h2>
+    <p>
+        L'inspecteur d'élément est un outil en or dans le développement web. Il permet d'examiner et modifier le HTML et le CSS d'une page web afin de visualiser les modifications, sans toucher au fichier. Attention à chaque rafraîchissement, les modifications seront perdues. Il permet également de mieux comprendre comment sont construites les pages et les erreurs.
+        Les navigateurs web modernes embarquent tous un inspecteur d'élément. Il est généralement accessible en appuyant sur la touche <span class="noir">F12</span>. Il suffit donc d'appuyer sur cette touche sur la page web que vous souhaitez examiner pour faire apparaître l'inspecteur d'élément.
+        ou sur <span class="noir">CLIC DROIT</span> + <span class="noir">Inspecter</span>
+    </p>
+    <h2>4)W3C Validator</h2>
+    <p>
+        Comme nous l'avons vu en introduction, c'est l'organisme W3C qui s'occupe de faire évoluer le HTML. Le W3C propose à ce titre un outil de test et de validation des pages web en HTML. Cet outil destiné aux développeurs permet de tester les pages pour savoir si elles sont valides vis-à-vis du <b>doctype</b> précisé.
+    </p>
+    <p class="alert alert-primary">
+        HTML validator : <a href="https://validator.w3.org/">https://validator.w3.org/</a>
+    </p>
+    <h2>5)Indentation</h2>
+    <p>
+        Vous l'avez peut-être remarqué depuis le début, il y a dans l'organisation de l'ouverture et de la fermeture des balises des décalages étranges. 
+        Les balises ne sont pas toutes au même niveau. En informatique et plus particulièrement en développement, on appelle ça l'<b>indentation</b>. Elle consiste 
+        à ajouter des espaces ou des tabulations au début de chaque ligne pour en faire ressortir certaines portions de code. Pour le HTML, l'indentation a un intérêt 
+        ergonomique et esthétique mais dans d'autres langages, elle s'avère obligatoire pour le bon fonctionnement. Le code est également plus lisible et maintenable. 
+        Ci-dessous un exemple de deux portions de code identiques, avec et sans indentation.
+    </p>
+    <p class="alert alert-secondary">
+        Il existe plusieurs <a href="https://fr.wikipedia.org/wiki/Style_d%27indentation">styles d'indentation</a>. Renseignez-vous sur celui qui vous correspond le mieux.
+    </p>
+    <p>
+        Dans ce nouveau chapitre, nous n'avons pas appronfondi les balises HTML, à l'exception des commentaires. Cependant, vous vous êtes armé de nombreux principes et outils qui vous servirons tout au long de votre longue vie de développeur. On se recolle aux balises HTML dans le prochain chapitre. On passe au niveau 3, ça va être une autre paire de manches 😉.
+    </p>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quiz4.html">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+    <button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="chapitre3.html">Chapitre Précedent</a></button>
+    <button id="basbuttonend" class="basbutton rounded float-end"><a href="chapitre5.html" title="passer au chapitre 6">Chapitre Suivant</a></button>
+</body>
+<br><br>
+<footer style="color: beige;">Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>

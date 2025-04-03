@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Quiz.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../ressources html/apprendrehtml.html" title="page du Cours">Apprendre HTML5</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../ressources html/Quiz3.html" title="Raffraichir">Raffraichir</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</head>
+<br><br><br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="chapitre3.html">chapitre4</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Quiz</li>
+        </ol>
+      </nav>
+</div>
+<body id="corp">
+    <h1 id="titre">Quiz: Écrire une page en HTML5 Niveaux 1</h1><br>
+    <p id="divalert" class="alert"></p>
+    <br>
+    <form id="forme">
+        <fielset>
+            <legend>1/Quelle balise représente le titre principal d'une page HTML ?</legend>
+            A. &lth6&gt<br>
+            B. &lth1&gt<br>
+            C. &lth3&gt<br><br>
+            <input id="input1" type="text" placeholder="Votre choix : A, B ou C"/><br><hr>
+        </fielset>
+        <fielset>
+            <legend>2/Quelle est la balise utilisée pour définir un paragraphe en HTML ?</legend>
+            A. &ltp&gt<br>
+            B. &ltdiv&gt<br>
+            C. &ltspan&gt<br><br>
+            <input id="input2" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>3/Quelle balise permet de faire un saut à la ligne ?</legend>
+            A. &ltbreak&gt<br>
+            B. &ltbr /&gt<br>
+            C. &ltline&gt<br><br>
+            <input id="input3" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>4/Que fait la balise &ltstrong&gt par défaut dans les navigateurs ?</legend>
+            A. Applique une couleur rouge au texte<br>
+            B. Affiche le texte en italique<br>
+            C. Met le texte en gras<br><br>
+            <input id="input4" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>5/Quelle balise HTML est utilisée pour créer une liste à puces ?</legend>
+            A. &ltul&gt<br>
+            B. &ltol&gt<br>
+            C. &ltli&gt<br><br>
+            <input id="input5" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset><br>
+        <fielset>
+            <legend>6/Quelle balise est utilisée pour une liste numérotée ?</legend>
+            A. &ltol&gt<br>
+            B. &ltul&gt<br>
+            C. &ltli&gt<br><br>
+            <input id="input6" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>7/Comment déclarer un document HTML5 ?</legend>
+            A. &lt!DOCTYPE html&gt.<br>
+            B. &lthtml lang="en"&gt.<br>
+            C. &lt!DOCTYPE&gt.<br><br>
+            <input id="input7" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>8/Quelle balise contient tout le contenu visible par l'utilisateur ?</legend>
+            A. &lthead&gt.<br>
+            B. &lthtml&gt.<br>
+            C. &ltbody&gt.<br><br>
+            <input id="input8" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>9/Quelle est la balise utilisée pour un élément de liste, qu'il soit dans &ltul&gt ou &ltol&gt?</legend>
+            A. &ltitem&gt.<br>
+            B. &ltli&gt.<br>
+            C. &ltelement&gt.<br><br>
+            <input id="input9" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>10/Quelle balise HTML permet de structurer du contenu sans avoir un rôle spécifique (par ex., mise en forme) ?</legend>
+            A. &ltspan&gt.<br>
+            B. &ltsection&gt.<br>
+            C. &ltdiv&gt.<br><br>
+            <input id="input10" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset><br>
+        <fielset>
+            <legend>11/Quelle est la différence principale entre &ltdiv&gt et &ltspan&gt en HTML ?</legend>
+            A. &ltdiv&gt est utilisé en inline et &ltspan&gt en bloc.<br>
+            B. &ltdiv&gt est utilisé en bloc et &ltspan&gt en inline.<br>
+            C. Il n'y a aucune différence.<br><br>
+            <input id="input11" type="text" placeholder="Votre choix : A, B ou C"/><br><hr>
+        </fielset>
+        <fielset>
+            <legend>12/Quelle balise est utilisée pour insérer une ligne horizontale dans une page ?</legend>
+            A. &ltline&gt<br>
+            B. &lthr /&gt<br>
+            C. &ltbr /&gt<br><br>
+            <input id="input12" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>13/Comment créer un commentaire en HTML ?</legend>
+            A. &lt!--commentaire--&gt<br>
+            B. /* commentaire */<br>
+            C. // commentaire<br><br>
+            <input id="input13" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>14/Quelle est la structure correcte pour un fichier HTML ?</legend>
+            A. &lthtml&gt -> &lthead&gt -> &lttitle&gt<br>
+            B. &lthtml&gt -> &ltbody&gt -> &ltmeta&gt<br>
+            C. &lthtml&gt -> &lthead&gt -> &ltbody&gt<br><br>
+            <input id="input14" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>15/Quelle est la différence entre &ltstrong&gt et &ltb&gt ?</legend>
+            A. &ltstrong&gt indique une importance sémantique, tandis que &ltb&gt est purement visuel.<br>
+            B. &ltb&gt indique une importance sémantique, tandis que &ltstrong&gt est purement visuel.<br>
+            C. Les deux sont identiques.<br><br>
+            <input id="input15" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset><br>
+        <fielset>
+            <legend>16/Quelle balise est auto-fermante ?</legend>
+            A. &ltdiv&gt<br>
+            B. &ltbr /&gt<br>
+            C. &ltp&gt<br><br>
+            <input id="input16" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>17/Est-ce que CSS peut être appliqué à des éléments HTML grâce aux balises &ltdiv&gt et &ltspan&gt ?</legend>
+            A. Oui.<br>
+            B. Non.<br>
+            C. je sais pas tchrr.<br><br>
+            <input id="input17" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>18/Dans quel cas utiliseriez-vous &ltem&gt au lieu de &lti&gt, ?</legend>
+            A. Si vous souhaitez simplement mettre du texte en italique.<br>
+            B. Si vous souhaitez marquer un texte comme important ou emphatique.<br>
+            C. Dans tout les cas.<br><br>
+            <input id="input18" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>19/Quel attribut est utilisé pour définir une langue spécifique pour une page HTML ?</legend>
+            A. charset.<br>
+            B. lang.<br>
+            C. language.<br><br>
+            <input id="input19" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>20/La balise &ltmeta charset="utf-8"&gt se place dans :</legend>
+            A. La balise &ltbody&gt.<br>
+            B. La balise &lthead&gt.<br>
+            C. La balise &lthtml&gt.<br><br>
+            <input id="input20" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset><br>
+        <input id="submitbutton" type="submit" onclick="Valider()">
+        
+    </form>
+    <br>
+    <p class="alert alert-success">
+        Ce QCM a été crée en mars 2025. Si vous decouvrez une erreur n'hésiter pas a me <a href="http://wa.me/2250575087250">Contacter</a>
+    </p>
+    <script src="Quiz3.js"></script>
+</body>
+</html>

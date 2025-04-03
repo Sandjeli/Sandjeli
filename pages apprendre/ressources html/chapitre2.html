@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="chapitre2.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Chapitre 2 & 3</li>
+        </ol>
+    </nav>
+</div>
+<br>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#chap1">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="chapitre3.html#chap4">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre3.html#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7.html#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">15 Minutes</span>
+    </p>
+    <h1 id="chap2">III.Chapitre 2 : Introduction a la syntaxe HTML</h1>
+    <p>
+        L'éditeur de texte de votre choix est ouvert et vous êtes motivé un max pour faire votre premier fichier HTML. Ça tombe bien, car dans ce chapitre, on commence à pratiquer.
+    </p>
+    
+    <h2>1)Nouveau fichier</h2>
+    <p>
+        Ouvrez votre éditeur de texte et créez un nouveau fichier <span class="noir">(Fichier > Nouveau)</span>.
+        Écrivez ce que vous voulez, puis enregistrez le fichier <span class="noir">(Fichier > Enregistrer )</span>.
+        Nommez-le avec une extension <span class="noir">.html</span> comme <span class="noir">mapage.html</span> et sauvegardez-le à l'emplacement souhaité. Voilà, prêt pour votre premier fichier HTML !<h1>&#128524;</h1>
+    </p>
+    <h6>Suivre le Tuto si nécessaire</h6>
+    <video controls width="800">
+        <source src="Crée un fichier html.mp4" type="video/mp4">
+        <!-- Message affiché si le format n'est pas supporté -->
+        Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    
+    <h2>2)Les balises et attributs</h2>
+    <h3>a.Les balises</h3>
+    <p>
+        Une balise HTML, ou "tag" en anglais, est un élément qui sert à structurer et organiser le contenu d'une page web.
+        Elle indique au navigateur comment afficher ou interpréter une partie spécifique de ce contenu.
+        Les balises sont écrites entre des chevrons <span class="balise">&lt...&gt</span>. Par exemple, <span class="balise">&ltp&gt</span> est une balise qui signale un paragraphe. 
+        La plupart des balises s'utilisent en paire : une balise ouvrante <span class="balise">&ltp&gt</span> et une balise fermante <span class="balise">&lt/p&gt</span>, avec le contenu placé entre les deux.
+    </p>
+    <h4>Balises normales</h4>
+    <p>
+        Une balise normale s'ouvre et se ferme. On a donc une balise ouvrante et une balise fermante. Elle indique au navigateur web les délimitations de l'impact de la balise. Ci-dessous un exemple de balise normale.
+        <span class="balise">&lth1&gt</span>Hello<span class="balise">&lt/h1&gt</span>
+    </p>
+    <h4>Balises auto-fermantes ou orphelines</h4>
+    <p>
+        Ces balises n'ont pas de balise ouvrante ni fermante. Elle servent le plus souvent à insérer un élément autonome à un emplacement précis. 
+        C'est pourquoi il n'est pas nécessaire de délimiter le début et la fin de la balise. Ci-après l'exemple d'une balise auto-fermante. <span class="balise">&ltbalise /&gt</span>.<br>
+        Il est important de préciser que le <b>slash </b><span class="balise">/</span> et l'espace de fin ne sont pas obligatoires.
+    </p>
+    <h3>b.Les Attributs</h3>
+    <p>
+        Les attributs sont des options ajoutées aux balises HTML pour fournir des informations supplémentaires. 
+        Ils se placent dans la balise ouvrante ou auto-fermante et doivent être uniques et écrits en minuscule.
+        <span class="balise">&ltbalise <span style="color:orange;">attribut</span>=<span style="color:green;">"1"</span>&gt</span>Hello<span class="balise">&lt/balise&gt</span>
+    </p>
+    <h1 id="chap3">IV.Chapitre 3 : Structure de base d'une page HTML5</h1>
+    <h2>HTML Documents</h2>
+    <p>
+        Tous les documents HTML doivent commencer par une déclaration de type de document : .<span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span>
+        Le document HTML lui-même commence par <span class="balise">&lthtml&gt</span> et se termine par <span class="balise">&lt/html&gt</span>.
+        La partie visible du document HTML est comprise entre <span class="balise">&ltbody&gt</span> et <span class="balise">&lt/body&gt</span>.<br><br>
+        <strong>Je vous invite maintenant, à copier-coller le code ci-dessous dans votre fichier.</strong>
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 60%;">
+            <div class="containecode">
+                <code>
+                    <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                    <span class="balise">&lthtml&gt</span><br>
+                    <span class="balise">&lthead&gt</span><br>
+                    <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                    <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                    <span class="balise">&lt/head&gt</span><br>
+                    <span class="balise">&ltbody&gt</span><br>
+                        Contenue qui s'affiche sur la page<br>
+                    <span class="balise">&lt/body&gt</span><br>
+                    <span class="balise">&lt/html&gt</span>
+                </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 60%;">
+            <div>
+                <h4><center>Resultat</center></h4>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="utf-8" />
+                <title> Titre de la page affiché dans la barre du navigateur</title>
+                </head>
+                <body>
+                Contenue qui s'affiche sur la page
+                </body>
+                </html>
+            </div>
+          </div>
+    </div>
+    <hr>
+    <p>
+        Depuis le début du cours, on avance tranquillement et là, bam, on rentre dans le vif du sujet. Tu ne comprend plus rien ?🤣 
+        C'est quoi toutes ces balises 😖?! Au secours !
+        Pas de panique Lorraine, nous allons disséquer chaque ligne pour toutes les comprendre.
+    </p>
+    <h2>1)Le doctype</h2>
+    <p>
+        La déclaration <span class="balise">&lt!DOCTYPE&gt</span> représente le type de document et aide les navigateurs à afficher correctement les pages Web. 
+        Elle précise la version du HTML que le fichier utilise. En l’occurrence, cette ligne précise que l'on souhaite écrire en HTML5.
+        Il ne doit apparaître qu’une seule fois, en haut de la page (avant les balises HTML).
+        La déclaration <span class="balise">&lt!DOCTYPE&gt</span> n’est pas sensible à la casse. 
+        C’est à dire que cette déclaration peut être écrite en majuscules <span class="balise">&lt!DOCTYPE&gt</span> ou en minuscules <span class="balise">&lt!doctype&gt</span>, sans aucune différence dans son fonctionnement. 
+        Les navigateurs interprètent ces deux versions de manière identique.
+    </p>
+    <h2>2)La balise <span class="balise">&ltHTML&gt</span></h2>
+    <p>
+        Cette balise <span class="balise">&lthtml&gt</span> est la principale de notre fichier HTML. En effet, elle va englober toutes les prochaines. 
+        La balise ouvrante est tout au début de votre fichier et la balise fermante est tout à la fin. 
+        Un fichier HTML comporte automatiquement cette balise.
+    </p>
+    <h2>3)La balise <span class="balise">&lthead&gt</span></h2>
+    <p>
+        Nous allons découvrir à la suite deux balises très importantes. La première est la balise <span class="balise">&lthead&gt</span>. 
+        Elle correspond à l'en-tête de votre fichier HTML. Cette zone ou section contient les informations générales de votre page. 
+        Elle indique au navigateur web entre autres, l'encodage des caractères spéciaux, des déclarations de fichiers, le titre, et plein d'autres informations précieuses sur la page.
+         Les informations contenues entre cette balise ne sont pas affichées à l'utilisateur à l'exception de quelques balises, comme le titre que l'on retrouve dans l'onglet du navigateur web.
+    </p>
+    <h2>4)La balise <span class="balise">&ltbody&gt</span></h2>
+    <p>
+        La deuxième balise très importante est la balise <span class="balise">&ltbody&gt</span>. Elle est très importante car c'est dans cette balise que nous allons écrire la majeure partie de notre code. 
+            L'ensemble des informations contenues dans cette balise s'affichent à l'utilisateur. Elle englobe, tout comme la balise <span class="balise">&lthtml&gt</span>, une grande quantité d'informations. 
+                Dans notre fichier d'exemple, la balise est pour le moment vide. C'est normal, ne sois pas trop pressé, jeune fille !
+    </p>
+    <h2>5)La balise <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span></h2>
+    <p>
+        Là ça vient en petard ! Qu'est-ce que c'est que cette balise ? Il n'y a pas de quoi se mettre mettre dans les dohis. 
+        Cette balise indique l'encodage que votre fichier HTML utilise. Elle doit être dans le <span class="balise">&lthead&gt</span> de votre page. 
+        Attention à ne pas confondre avec la langue de votre page, ce sont deux notions différentes. Concentrons-nous d'abord sur l'encodage, nous reviendrons ensuite sur la langue.
+    </p>
+    <h2>6)Langue de la page web</h2>
+    <p>
+        Il est primordial d'indiquer au navigateur web la langue du contenu de la page. 
+        Les informations données sur la langue du contenu sont notamment importantes pour les moteurs de recherches, 
+        mais également pour les outils de traduction automatique. 
+        Cette information n'est pas obligatoire mais fortement recommandée. Pour indiquer la langue d'un fichier HTML, 
+        il faut préciser un attribut à la balise <span class="balise">&lthtml&gt</span>. Pour notifier la langue française pour une page HTML, 
+        il faut faire comme ci-dessous.<br><span class="balise">&lthtml <span style="color:orange;">lang</span>=<span style="color:green;">"fr"</span>&gt</span>
+        <pre class="precode">
+            <code>
+                <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span>
+                <span class="balise">&lthtml <span style="color:orange;">lang</span>=<span style="color:green;">"fr"</span>&gt</span>
+                <span class="balise">&lthead&gt</span>
+                <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span>
+                <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span>
+                <span class="balise">&lt/head&gt</span>
+                <span class="balise">&ltbody&gt</span>
+                    Contenue qui s'affiche sur la page
+                <span class="balise">&lt/body&gt</span>
+                <span class="balise">&lt/html&gt</span>
+            </code>
+        </pre>
+        Comment connaître la valeur de l'attribut pour toutes les langues ? C'est très simple, la norme ISO 639-1 s'occupe de ça. Bonne lecture
+    </p>
+    <h2>7)La balise <span class="balise">&lttitle&gt</span></h2>
+    <p>
+        Cette balise correspond tout simplement au titre de votre page. Elle doit être dans le <span class="balise">&lthead&gt</span> de votre page. 
+            Toutefois, ce dernier ne s'affiche pas dans la page mais dans l'onglet de votre navigateur web. Si on reprend notre premier fichier HTML, 
+            notre titre s'affiche bien tout en haut. Ci-après un exemple.<br><br>
+            <img src="aperçutitle.png" alt="aperçu" title="aperçu">
+    </p>
+    <h2>8)Règle d'ouverture et de fermeture des balises</h2>
+    <p>
+        Les balises HTML s'ouvrent et se ferment dans un ordre précis. Il ne faut jamais l’oublier.
+    </p>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quiz2.html">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+    <button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="apprendrehtml.html">Chapitre Précedent</a></button>
+    <button id="basbuttonend" class="basbutton rounded float-end"><a href="chapitre3.html" title="passer au chapitre 4">Chapitre Suivant</a></button>
+</body>
+<br><br>
+<footer>Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>

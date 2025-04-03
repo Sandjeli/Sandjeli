@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveau 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="chapitre6.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="#chap4">Chapitre 4</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Niveau 5</li>
+        </ol>
+    </nav>
+</div>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#intro">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="#chap4"">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre4.html#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">25 Minutes</span>
+    </p>
+    <h1 id="chap4">Écrire une page en HTML5</h1>
+    <h2 id="niv5">Niveau 5</h2>
+    <p>
+        Le dernier chapitre de ce cours portera uniquement sur une notion précise mais ô combien importante et dense : <b>les formulaires</b>. 
+        Ces derniers sont les principaux moyens de communiquer entre un utilisateur et un site web. Ils donnent le moyen aux utilisateurs d'envoyer des données qu'ils contrôlent, au site web. 
+        La plupart du temps, les formulaires sont composés de plusieurs champs qui n'ont pas tous la même apparence. On retrouve des listes déroulantes, des zones de textes mais également des cases à cocher ou encore des boutons radio. 
+        Généralement, ces champs sont associés à un libellé et à des instructions pour les remplir correctement. Comme le reste du cours, nous n'aborderons pas la mise en forme mais uniquement le code HTML (Hypertext Markup Language), 
+        avec la découverte de nombreuses balises. Nous n'aborderons pas non plus <b>le traitement du formulaire</b> côté serveur qui peut se traiter à l'aide d'un autre langage : le PHP (Hypertext Preprocessor). On jette l'ancre pour ce dernier chapitre qui sera dense. 
+    </p>
+    <h2>1)Les formulaires</h2>
+    <h3>a)La balise &ltform&gt</h3>
+    <p>
+        À l'instar de <span class="balise">&lttable&lt</span> pour les tableaux, la balise <span class="balise">&ltform&lt</span> englobe tout un formulaire. Il y a donc une balise ouvrante et une fermante. Nous détaillerons au cours du chapitre l'ensemble des balises que peut accuellir cette dernière. 
+        Comme expliqué en introduction, derrière chaque formulaire se cache une page de destination. En effet, les formulaires sont bien traités quelque part. Prenons l'exemple d'un simple formulaire de contact, les données que l'utilisateur 
+        enregistre sont bel et bien envoyées quelque part. Deux attributs sont utilisés pour préciser ces informations :
+            <ul>
+                <li><span class="balise">action=""</span> : détermine la page qui traitera les données du formulaire enregistrées par l'utilisateur.</li>
+                <li><span class="balise">method=""</span> : précise la méthode HTTP d'envoi des données (GET ou POST).</li>
+            </ul>
+        Étant donné que nous ne traiterons pas les formulaires côté serveur, nous ferons abstraction de ces deux attributs dans le reste du chapitre. 
+        C'est pour votre culture et commencer à comprendre quelques notions, notamment la séparation entre le <b>HTML</b>, la <b>mise en forme</b> et le <b>traitement des données</b>. 
+        Prenons tout de même le temps de voir un exemple d'utilisation de cette balise avec ces deux attributs incontournables.
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 10%;">
+            <div class="containecode">
+                    <code>
+                      <span class="balise">&ltform <span style="color:orange;">action</span>=<span style="color:green;">"/ma-page-traitement"</span> <span style="color:orange;">method</span>=<span style="color:green;">"POST"</span>&gt</span>...<span class="balise">&ltform&gt</span><br>
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 10%;">
+            <div>
+                <h4><center>Resultat</center></h4><br>
+                <form action="/ma-page-traitement" method="POST">...<form>
+            </div>
+          </div>
+    </div>
+    <h3>b)La balise &ltinput /&gt</h3>
+    <p>
+        Un formulaire est composé d'une suite de champs qui a pour but de collecter les données de l'utilisateur, qu'il aura bien voulu enregistrer. 
+        La <b>balise orpheline</b> <span class="balise">&ltinput /&gt</span> est celle la plus utilisée, car elle offre beaucoup de possibilités. Le polymorphisme de cette balise nous incombe de nous attarder longuement sur elle. 
+        Nous allons commencer par la forme la plus basique de la balise pour ensuite détailler les nombreuses options.
+        <div class="flex">
+            <div class="ratio" style="--bs-aspect-ratio: 10%;">
+                <div class="containecode">
+                        <code>
+                          <span class="balise">&ltinput <span style="color:greenyellow;">type</span>="text" /&gt</span>
+                        </code>
+                </div>
+              </div>
+              <div class="ratio" style="--bs-aspect-ratio: 20%;">
+                <div>
+                    <h4><center>Resultat</center></h4><br>
+                    <center><input type="text" placeholder="zone input pour du texte"/></center>
+                </div>
+              </div>
+        </div>
+
+        La ligne de code HTML ci-dessus correspond à la forme la plus basique d'une balise <span class="balise">&ltinput /&gt</span>. L'attribut <span style="color:greenyellow;">type=""</span> est essentiel. C'est la valeur de cet attribut qui transforme la balise du tout au tout. La valeur par défaut de l'attribut <span style="color:greenyellow;">type=""</span> est text. 
+        Si vous ne précisez pas de <span style="color:greenyellow;">type=""</span> pour une balise <span class="balise">&ltinput /&gt</span>, alors celle-ci sera <span style="color:greenyellow;">type="text"</span>. Il existe bien d'autres valeurs. Ci-après un tableau avec une liste non-exhaustive des possibilités, mais regroupant néanmoins les principales.
+    </p>
+
+    <table class="table table-striped table-responsive">
+        <tr>
+            <th class="w-20">Valeur de l'attribut <code>type=""</code></th>
+            <th class="w-40">Description</th>
+            <th class="w-40">Attributs pertinents</th>
+        </tr>
+        <tr>
+            <td><code>text</code></td>
+            <td>Champ textuel le plus simple. Valeur par défaut de la balise <code>&lt;input /&gt;</code></td>
+            <td>maxlength, placeholder, required, readonly</td>
+        </tr>
+        <tr>
+            <td><code>email</code></td>
+            <td>Champ textuel permettant de saisir une adresse email</td>
+            <td>placeholder, required, readonly</td>
+        </tr>
+        <tr>
+            <td><code>password</code></td>
+            <td>Champ textuel permettant de saisir un mot de passe de manière masquée</td>
+            <td>required, readonly</td>
+        </tr>
+        <tr>
+            <td><code>url</code></td>
+            <td>Champ textuel permettant de saisir l'adresse URL absolue d'un site (exemple : https://www.google.fr)</td>
+            <td>placeholder, required, readonly</td>
+        </tr>
+        <tr>
+            <td><code>tel</code></td>
+            <td>Champ textuel permettant de saisir un numéro de téléphone</td>
+            <td>maxlength, placeholder, required, readonly</td>
+        </tr>
+        <tr>
+            <td><code>checkbox</code></td>
+            <td>Case à cocher. Aucune ou plusieurs cases peuvent être cochées.</td>
+            <td>value, checked, required</td>
+        </tr>
+        <tr>
+            <td><code>radio</code></td>
+            <td>Bouton radio. Seul un bouton peut être sélectionné.</td>
+            <td>value, checked, required</td>
+        </tr>
+        <tr>
+            <td><code>number</code></td>
+            <td>Champ permettant de saisir un nombre à virgule ou non</td>
+            <td>max, min, step, required</td>
+        </tr>
+        <tr>
+            <td><code>date</code></td>
+            <td>Champ permettant de sélectionner une date</td>
+            <td>max, min, required, readonly</td>
+        </tr>
+        <tr>
+            <td><code>color</code></td>
+            <td>Champ textuel permettant de saisir un mot de passe de manière masquée</td>
+            <td>required</td>
+        </tr>
+        <tr>
+            <td><code>file</code></td>
+            <td>Champ permettant à un utilisateur de sélectionner un fichier pour qu'il soit envoyé au serveur</td>
+            <td>accept, required</td>
+        </tr>
+        <tr>
+            <td><code>hidden</code></td>
+            <td>Champ textuel non visible mais dont la valeur est bel et bien envoyée au serveur</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>button</code></td>
+            <td>Bouton par défaut sans sens et fonctionnalité particulière</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>submit</code></td>
+            <td>Bouton qui permet de soumettre le formulaire</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <p>La liste est non-exhaustive mais permet déjà de faire beaucoup. On remarque que certaines valeurs pour l'attribut <code>type=""</code> déclenchent l'utilisation d'autres attributs pour mieux les contrôler. Certains sont spécifiques et d'autres plus globaux. Le tableau suivant permet d'en apprendre plus sur ces derniers.</p>
+
+    <table class="table table-striped table-responsive">
+        <tr>
+            <th class="w-25">Attributs pertinents de <code>&lt;input /&gt;</code></th>
+            <th class="w-75">Description</th>
+        </tr>
+        <tr>
+            <td><code>name=""</code></td>
+            <td>Détermine le nom de la balise quand elle sera envoyée au serveur. Cet attribut est différent et ne remplace pas <code>id=""</code>. Il peut être utilisé sur tous les éléments d'un formulaire</td>
+        </tr>
+        <tr>
+            <td><code>value=""</code></td>
+            <td>Initialise la valeur du champ. Cet attribut est optionnel sauf pour <code>type="radio"</code> et <code>type="checkbox"</code></td>
+        </tr>
+        <tr>
+            <td><code>required=""</code></td>
+            <td>Permet de préciser que la valeur du champ est requise pour que le formulaire puisse être envoyé au serveur</td>
+        </tr>
+        <tr>
+            <td><code>placeholder=""</code></td>
+            <td>Indication destinée à l'utilisateur sur la valeur attendue du champ</td>
+        </tr>
+        <tr>
+            <td><code>readonly=""</code> et <code>disabled=""</code></td>
+            <td>Désactive la modification du champ à l'utilisateur</td>
+        </tr>
+        <tr>
+            <td><code>accept=""</code></td>
+            <td>Permet de préciser les types de fichiers acceptés par le serveur. Cet attribut est utilisé uniquement avec <code>type="file"</code></td>
+        </tr>
+        <tr>
+            <td><code>maxlength=""</code></td>
+            <td>Détermine le nombre maximal de caractères</td>
+        </tr>
+        <tr>
+            <td><code>checked=""</code></td>
+            <td>Permet de contrôler quelle balise sera cochée par défaut. Cet attribut est utilisé uniquement avec <code>type="radio"</code> et <code>type="checkbox"</code></td>
+        </tr>
+        <tr>
+            <td><code>max=""</code></td>
+            <td>Détermine la valeur maximale (numérique ou temporelle). Celle-ci ne peut être inférieure à la valeur de l'attribut <code>min=""</code></td>
+        </tr>
+        <tr>
+            <td><code>min=""</code></td>
+            <td>Détermine la valeur minimale (numérique ou temporelle). Celle-ci ne peut être supérieure à la valeur de l'attribut <code>max=""</code></td>
+        </tr>
+        <tr>
+            <td><code>step=""</code></td>
+            <td>Détermine l'incrément pour passer d'une valeur à l'autre</td>
+        </tr>
+    </table>
+    <p>
+        Ci-après un exemple d'utilisation pour chaque valeur de type="" listée dans le tableau.
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 200%;">
+            <div class="containecode">
+                    <code>
+                        &lt;!-- Champ text --&gt;<br>
+                        &lt;input type="text" maxlength="50" placeholder="Entrez votre texte ici" required readonly /&gt;<br>
+                        
+                        &lt;!-- Champ email --&gt;<br>
+                        &lt;input type="email" placeholder="email@example.com" required readonly /&gt;<br>
+                        
+                        &lt;!-- Champ password --&gt;<br>
+                        &lt;input type="password" placeholder="Mot de passe" required readonly /&gt;<br>
+                        
+                        &lt;!-- Champ url --&gt;<br>
+                        &lt;input type="url" placeholder="https://example.com" required readonly /&gt;<br>
+                        
+                        &lt;!-- Champ tel --&gt;<br>
+                        &lt;input type="tel" maxlength="15" placeholder="+123456789" required readonly /&gt;<br>
+                        
+                        &lt;!-- Case à cocher --&gt;<br>
+                        &lt;input type="checkbox" value="Option1" checked required /&gt;<br> Option 1<br>
+                        
+                        &lt;!-- Bouton radio --&gt;<br>
+                        &lt;input type="radio" name="choix" value="OptionA" checked required /&gt; <br>Option A<br>
+                        
+                        &lt;!-- Champ number --&gt;<br>
+                        &lt;input type="number" min="1" max="100" step="1" required /&gt;<br>
+                        
+                        &lt;!-- Champ date --&gt;<br>
+                        &lt;input type="date" required/&gt;<br>
+                        
+                        &lt;!-- Champ color --&gt;<br>
+                        &lt;input type="color" required /&gt;<br>
+                        
+                        &lt;!-- Champ fichier --&gt;<br>
+                        &lt;input type="file" accept=".jpg, .png" required /&gt;<br>
+                        
+                        &lt;!-- Champ hidden --&gt;<br>
+                        &lt;input type="hidden" name="identifiant" value="12345" /&gt;<br>
+                        
+                        &lt;!-- Bouton simple --&gt;<br>
+                        &lt;input type="button" value="Cliquer" /&gt;<br>
+                        
+                        &lt;!-- Bouton de soumission --&gt;<br>
+                        &lt;input type="submit" value="Envoyer" /&gt;
+                        
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 20%;">
+            <div>
+                <h4><center>Resultat</center></h4><br>
+                <!-- Champ text -->
+<input type="text" maxlength="50" placeholder="Entrez votre texte ici" required readonly /><br><br>
+<!-- Champ email -->
+<input type="email" placeholder="email@example.com" required readonly /><br><br>
+<!-- Champ password -->
+<input type="password" placeholder="Mot de passe" required readonly /><br><br>
+<!-- Champ url -->
+<input type="url" placeholder="https://example.com" required readonly /><br><br>
+<!-- Champ tel -->
+<input type="tel" maxlength="15" placeholder="+123456789" required readonly /><br><br>
+<!-- Case à cocher -->
+<input type="checkbox" value="Option1" checked required />
+Option 1<br>
+<!-- Bouton radio -->
+<input type="radio" name="choix" value="OptionA" checked required />
+Option A<br><br>
+<!-- Champ number -->
+<input type="number" min="1" max="100" step="1" required /><br><br>
+<!-- Champ date -->
+<input type="date" min="2023-01-01" max="2023-12-31" required /><br><br>
+<!-- Champ color -->
+<input type="color" required /><br><br>
+<!-- Champ fichier -->
+<input type="file" accept=".jpg, .png" required /><br><br>
+<!-- Champ hidden -->
+<input type="hidden" name="identifiant" value="12345" /><br><br><br>
+<!-- Bouton simple -->
+<input type="button" value="Cliquer" />
+<!-- Bouton de soumission -->
+<input type="submit" value="Envoyer" />
+            </div>
+          </div>
+    </div>
+
+    <p>Comme nous venons de le voir, la balise <code>&lt;input /&gt;</code> est puissante et offre de nombreuses possibilités. Bien que celle-ci permette une myriade d'options, elle ne peut pas tout réaliser. Pour couvrir d'autres cas, d'autres balises existent. Nous nous plongeons dedans sans plus tarder.</p>
+
+				<h3>c)La balise &ltlabel&gt</h3>
+				<p>Si vous avez bien remarqué, une balise a fait son apparition dans l'exemple : <code>&lt;label&gt;</code>. Cette balise très simple permet d'étiqueter un champ pour lui donner un nom ou une courte explication. Pour lier un <code>&lt;label&gt;</code> avec un champ, on utilise l'attribut <code>for=""</code>. On inscrit en valeur de cet attribut la valeur de l'<code>id=""</code> du champ, comme dans l'exemple ci-après.</p>
+<div class="flex">
+    <div class="ratio" style="--bs-aspect-ratio: 20%;">
+        <div class="containecode">
+            <code class="html">
+                <span class=balise>&ltdiv&gt</span><br>
+                <span class=balise>&ltlabel for="city"&gt</span>Ville<span class=balise>&lt/label&gt</span><br>
+                &lt;input type="text" id="city" /&gt;<br>
+                <span class=balise>&lt/div&gt</span><br>
+            </code>
+        </div>
+      </div>
+      <div class="ratio" style="--bs-aspect-ratio: 30%;">
+        <div>
+            <h4><center>Resultat</center></h4><br>
+            <div>
+                <label for="city">Ville</label><br>
+                <input type="text" id="city" placeholder="input text" />
+            </div>
+
+        </div>
+      </div>
+</div>
+
+				<p class="alert alert-warning">
+					<i class="fas fa-exclamation-circle"></i> Attention à ne pas confondre l'attribut <code>name=""</code> et <code>id=""</code>. Ce sont deux attributs différents mais qui peuvent avoir les mêmes valeurs.
+				</p>
+
+				<h3>d)La balise &lttextarea&gt</h3>
+				<p>La balise <code>&lt;input /&gt;</code> permet de répondre à plusieurs besoins, dont celui d'enregistrer un texte simple avec <code>type="text"</code>. Seulement, celle-ci ne permet pas d'inscrire un texte plus important, avec notamment des sauts de ligne. La balise <code>&lt;textarea&gt;</code> répond à ce besoin. Elle est dédiée aux <strong>champs textuels multilignes</strong>. Contrairement à la balise <code>&lt;input /&gt;</code>, <code>&lt;textarea&gt;</code> a une balise ouvrante et fermante. Si on souhaite inscrire un contenu par défaut à l'intérieur de la balise, il faut le préciser au coeur de la balise. En effet, celle-ci n'accepte pas l'attribut <code>value=""</code>.</p>
+
+				<p>On note pour cette balise deux attributs particuliers, qui jouent sur la mise en forme :</p>
+				<ul>
+					<li><code>cols=""</code> : la largeur visible du champ, exprimée en largeur moyenne de caractères.</li>
+					<li><code>rows=""</code> : le nombre de lignes visibles dans le champ.</li>
+				</ul>
+
+                <div class="flex">
+                    <div class="ratio" style="--bs-aspect-ratio: 30%;">
+                        <div class="containecode">
+                                <code>
+                                    <span class="balise">&lttextarea</span> rows="3" cols="50" name="montexte"<span class="balise">&gt</span>Je rédige mon texte ici librement<span class="balise">&lt/textarea&gt</span>
+                                </code>
+                        </div>
+                      </div>
+                      <div class="ratio" style="--bs-aspect-ratio: 20%;">
+                        <div>
+                            <h4><center>Resultat</center></h4><br>
+
+                            <textarea rows="3" cols="50" name="montexte">Rédige ton texte ici librement</textarea>
+                        </div>
+                      </div>
+                </div>
+
+				<h3>e)Les balises &ltselect&gt et &ltoption&gt</h3>
+				<p>La balise <code>&lt;select&gt;</code> permet de constuire des <strong>listes de sélection ou déroulantes</strong>. C'est une balise que l'on retrouve dans de nombreux formulaires. Elle est très pratique car elle permet de contrôler les différents choix qui sont proposés à l'utilisateur. Les éléments d'une liste déroulante sont déterminés par la balise <code>&lt;option&gt;</code>.</p>
+
+                <div class="flex">
+                    <div class="ratio" style="--bs-aspect-ratio: 30%;">
+                        <div class="containecode">
+                            <code class="html">
+                            <span class="balise">
+                                &lt;select name="moncocktail"&gt;<br>
+                                &lt;option value="Mojito"&gt;Mojito&lt;/option&gt;<br>
+                                &lt;option value="Daïquiri" selected="selected"&gt;Daïquiri&lt;/option&gt;<br>
+                                &lt;option value="White Lady"&gt;White Lady&lt;/option&gt;<br>
+                                &lt;option value="Old fashioned"&gt;Old fashioned&lt;/option&gt;<br>
+                                &lt;/select&gt;
+                            </span>
+                            </code>
+                        </div>
+                      </div>
+                      <div class="ratio" style="--bs-aspect-ratio: 20%;">
+                        <div>
+                            <h4><center>Resultat</center></h4><br>
+
+                            <select name="moncocktail">
+                                <option value="Mojito">Mojito</option>
+                                <option value="Daïquiri" selected="selected">Daïquiri</option>
+                                <option value="White Lady">White Lady</option>
+                                <option value="Old fashioned">Old fashioned</option>
+                                </select>
+                        </div>
+                      </div>
+                </div>
+
+				<h3>f)La balise &lt;button&gt;</h3>
+				<p>Le nom de cette balise est assez explicite, elle est la manière la plus simple de créer un <strong>bouton</strong>. On en distingue trois grands <code>type=""</code> :</p>
+				<ul>
+					<li><code>submit</code> : similaire à <code>&lt;input type="submit" /&gt;</code>.</li>
+					<li><code>reset</code> : permet de remettre à zéro instantanément l'ensemble des valeurs des balises du formulaire. A utiliser avec précaution dans des cas précis.</li>
+					<li><code>button</code> : bouton sans sens et fonctionnalité particulière.</li>
+				</ul>
+
+                <div class="flex">
+                    <div class="ratio" style="--bs-aspect-ratio: 10%;">
+                        <div class="containecode">
+                            <code>
+                                <span class="balise">&lt;button type="submit"&gt;Envoyer&lt;/button&gt;</span>
+                            </code>
+                        </div>
+                      </div>
+                      <div class="ratio" style="--bs-aspect-ratio: 20%;">
+                        <div>
+                            <h4><center>Resultat</center></h4><br>
+
+                            <center><button type="submit" disabled>Envoyer</button></center>
+                        </div>
+                      </div>
+                </div>
+
+				<h3>g)Les balises &lt;fieldset&gt; et &lt;legend&gt;</h3>
+				<p>La balise <code>&lt;fieldset&gt;</code> permet de <strong>regrouper des blocs de contenu</strong>. C'est une balise normale et on la retrouve régulièrement à l'intérieur d'un <code>&lt;form&gt;</code> pour organiser les différents champs. Elle est facultative et on peut en retrouver plusieurs par formulaire. Cette balise est souvent accompagnée de la balise <code>&lt;legend&gt;</code>. Celle-ci permet d'ajouter un libellé au <code>&lt;fieldset&gt;</code>. Il n'y a pas d'attributs pertinents notables pour un niveau de débutant pour cette balise. Focus sur son utilisation.</p>
+                <hr>
+                <hr>
+
+				
+				<h2 id="conclusion">VI) Conclusion</h2>
+				<p>Notre cours se termine sur ce chapitre consacré aux formulaires. Vous êtes désormais en mesure de vous frotter au <a href="Quiz7.html">Quiz</a> de ce chapitre et à la totalité des <a href="Exercices/exercice.html">exercices</a> relatifs au cours sur le HTML. Vous trouverez également une page <a href="mémento.html">mémento</a> qui regroupe et récapitule tout un tas de balises que nous avons découvertes pour les retrouver plus rapidement. Vous êtes désormais capable de créer des pages simples en HTML5.<h1>&#128523;</h1></p>
+				<p>N'oubliez pas qu'en tant que développeur, votre meilleur ami est Google (ou votre moteur de recherche préféré). Le web regorge de ressources sur les technologies web : des cours, des tutoriels, des exemples, des vidéos, des forums, etc. Vous trouverez presque toujours la réponse à votre question.</p>
+				<p>Naturellement, le prochain cours que je vous conseille est celui sur le <b>CSS</b>. En effet, pour le moment notre page web est peut-être fonctionnelle mais elle n'est pas encore mise en forme.</p>
+
+
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quiz7.html">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+    <button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="chapitre6.html">Chapitre Précedent</a></button>
+    <button id="basbuttonend" class="basbutton rounded float-end"><a href="Exercices/exercice.html" title="passer à la section des exercices">Exercices</a></button>
+</body>
+<br><br>
+<footer style="color: beige;">Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>

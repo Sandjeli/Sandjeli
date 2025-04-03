@@ -1,0 +1,25 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+button{
+    background-color:#0000ff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 200px;;
+}
+
+#titre{
+    color:darkblue;
+}
+.buttonrefreshquiz{
+    color:black;
+    margin:10px;
+    border-radius: 20px;
+}
+#submitbutton{
+    background-color: darkkhaki;
+}
+span{
+    font-weight: bold;
+}

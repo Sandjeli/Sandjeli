@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Quiz.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../ressources html/apprendrehtml.html" title="page du Cours">Apprendre HTML5</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../ressources html/Quiz2.html" title="Raffraichir">Raffraichir</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</head>
+<br><br><br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="chapitre4.html">chapitre5</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Quiz</li>
+        </ol>
+      </nav>
+</div>
+<body id="corp">
+    <h1 id="titre">Quiz: Ecrire une page html5</h1>
+    <h2 id="titre">Niveau 2</h2>
+    <p id="divalert" class="alert"></p>
+    <br>
+    <form id="forme">
+        <fielset>
+            <legend>1/Que permet de faire la balise &lt!-- --&gt ?</legend>
+            A. Ajouter du texte visible sur la page.<br>
+            B. Ajouter des commentaires dans le code HTML.<br>
+            C. Fermer une balise auto-fermante.<br><br>
+            <input id="input1" type="text" placeholder="Votre choix : A, B ou C"/><br><hr>
+        </fielset>
+        <fielset>
+            <legend>2/Pourquoi est-il déconseillé d'inclure plusieurs tirets dans un commentaire HTML ?</legend>
+            A. Cela rend le fichier trop lourd.<br>
+            B. Cela peut provoquer des erreurs d’interprétation par le navigateur.<br>
+            C. Les commentaires deviennent visibles dans le code source.<br><br>
+            <input id="input2" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>3/Quelle combinaison de touches permet d'afficher le code source d’une page dans la plupart des navigateurs ?</legend>
+            A. CTRL + U<br>
+            B. CTRL + S<br>
+            C. ALT + F4<br><br>
+            <input id="input3" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>4/Quelle est la fonction principale de l’inspecteur d’élément ?</legend>
+            A. Créer une nouvelle page web.<br>
+            B. Modifier le fichier HTML à distance.<br>
+            C. Examiner et modifier le HTML et le CSS temporairement.<br><br>
+            <input id="input4" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>5/Pourquoi faut-il être vigilant à ce que contiennent vos commentaires dans le code HTML ?</legend>
+            A. Parce que les commentaires peuvent être exécutés par le navigateur.<br>
+            B. Parce qu’ils sont visibles dans le code source par tout utilisateur.<br>
+            C. Parce qu’ils modifient la mise en page de la page web.<br><br>
+            <input id="input5" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset><br>
+        <fielset>
+            <legend>6/Que permet de vérifier l'outil W3C Validator ?</legend>
+            A. La vitesse d'une page web.<br>
+            B. La validité d’une page HTML vis-à-vis du doctype précisé.<br>
+            C. La compatibilité entre HTML et CSS.<br><br>
+            <input id="input6" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>7/Dans quel cas l'indentation est-elle obligatoire en HTML ?</legend>
+            A. Elle n’est pas obligatoire mais recommandée pour améliorer la lisibilité.<br>
+            B. Elle est obligatoire pour les navigateurs modernes.<br>
+            C. Elle est obligatoire pour activer le CSS.<br><br>
+            <input id="input7" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>8/Quel outil permet de tester si votre page web respecte les standards HTML5 ?</legend>
+            A. Inspecteur d’élément<br>
+            B. W3C Validator.<br>
+            C. F12.<br><br>
+            <input id="input8" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>9/Que se passe-t-il si vous modifiez le HTML d'une page dans l’inspecteur d’élément ?</legend>
+            A. Les modifications sont enregistrées sur le serveur.<br>
+            B. Les modifications sont visibles mais perdues au rafraîchissement de la page.<br>
+            C. La page génère automatiquement une sauvegarde.<br><br>
+            <input id="input9" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>10/Pourquoi l’indentation est-elle particulièrement importante en HTML ?</legend>
+            A. Elle améliore la lisibilité et facilite la maintenance.<br>
+            B. Elle optimise la rapidité d’exécution du fichier HTML.<br>
+            C. Elle s’assure que tous les navigateurs interprètent le fichier correctement.<br><br>
+            <input id="input10" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <input id="submitbutton" type="submit" onclick="Valider()">
+        
+    </form><br>
+
+    <p class="alert alert-success">
+        Ce QCM a été crée en mars 2025. Si vous decouvrez une erreur n'hésiter pas a me <a href="http://wa.me/2250575087250">Contacter</a>
+    </p>
+    <script src="Quiz4.js"></script>
+</body>
+</html>

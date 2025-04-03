@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveau 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="chapitre5.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="#chap4">Chapitre 4</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Niveau 3</li>
+        </ol>
+    </nav>
+</div>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#intro">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="#chap4"">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre3.html#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="#niv3">Niveaux 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7.html#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">15 Minutes</span>
+    </p>
+
+    <h1 id="chap4">V.Chapitre 4 - Écrire une page en HTML5</h1>
+    
+    <h2 id="niv3">Niveau 3</h2>
+    <p>
+        Nous avançons à grands pas dans l'apprentissage du HTML. Nous avons découvert de nombreuses balises et des outils pertinents. Seulement, 
+        notre site ne comporte qu'une seule page et notre contenu n'est que textuel. Dans ce chapitre, nous découvrirons l'importance des <b>liens hypertextes</b>, 
+        aussi appelés "hyperliens" ou tout simplement "liens", ainsi que l'utilisation des <b>images</b>.
+    </p>
+    
+    <h3>1)Liens hypertextes</h3>
+    <p>
+        Pour faire un lien, il faut utiliser la balise normale  <span class="balise">&lta&gt</span>. Il y a donc une balise ouvrante et une fermante.
+        est toujours accompagnée de son attribut préféré : <strong><span style="color:orange;">href</span>=<span style="color:green">""</span></span></strong>. La valeur de cet attribut précise vers quelle page le lien doit conduire. Ci-dessous un exemple.
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                    <code>
+                        <span class="balise">&lth2&gt</span>Mon Portefolio<span class="balise">&lt/h2&gt</span><br>
+                        <span class="balise">&ltp&gt</span><br>
+                        Salut moi c'est Sana clic <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"https://sandjeli.github.io/Sandjeli/"</span>&gt</span> ICI<span class="balise">&lt/a&gt</span> pour voir mon site.<br>
+                        <span class="balise">&lt/p&gt</span>
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <h4>Resultat</h4><br>
+                <h2>Mon Portefolio</h2>
+<p>
+Salut moi c'est Sana clic <a href="https://sandjeli.github.io/Sandjeli/"> ICI</a> pour voir mon site.
+</p>
+            </div>
+          </div>
+    </div>
+    <p>
+        Il existe deux grandes catégories de liens : <b>les liens absolus</b> et les <b>liens relatifs</b>. Explication.
+    </p>
+    <h2>2)Lien absolu</h2>
+    <p>
+        Pour faire un lien absolu, il suffit de copier le lien de la barre d'adresse et de le coller en valeur de l'attribut <span class="balise">href=""</span>. 
+        C'est un lien absolu car le lien complet. Il comporte notamment le fameux <span class="balise">http</span> ou <span class="balise">https</span>. L'exemple ci-dessus est un lien absolu.
+    </p>
+    <h2>2)Lien relatif</h2>
+    <p>
+        Les liens relatifs sont très utiles pour créer des <b>liens entre les différentes pages</b> d'un site web. Pour illustrer ce concept, nous allons créer un second fichier dans notre dossier de travail.
+    </p>
+
+    <p class="alert alert-primary">
+        Vous ne vous souvenez pas comment faire ou vous avez raté une étape ?.
+    </p>
+        <h6>Comment crée un fichier ?</h6>
+    <video controls width="800">
+        <source src="Crée un fichier html.mp4" type="video/mp4">
+        <!-- Message affiché si le format n'est pas supporté -->
+        Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    <p>
+        en suivant les instructions de la vidéo, créez un nouveau fichier HTML. 
+        Vous devriez vous retrouver dans le même dossier avec deux fichiers HTML., comme ci-dessous. Vous pouvez nommer le fichier comme vous le souhaitez.<br>
+        <img src="aperçudeuxdossiers.png" alt="test & test2" title="Aperçu du dossier avec 2 fichiers HTML" width="500" height="500"><br>
+        Maintenant que nous avons deux fichiers, nous souhaitons faire un lien du premier fichier vers le second. On souhaite donc dans notre exemple modifier le
+         fichier test.html pour ajouter un lien relatif qui pointera vers test-2.html. Ci-après le lien relatif à ajouter.
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div class="containecode">
+                    <code>
+                        <span class="balise">&ltp&gt</span>Je souhaite faire un lien vers la <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"test-2.html"</span></span><span class="balise">&gt</span>deuxième page<span class="balise">&lt/a&gt</span><span class="balise">&lt/p&gt</span><br>
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <h4>Resultat</h4><br>
+                <p>Je souhaite faire un lien vers la <a href="test-2.html" target="_blank">deuxième page</a></p>
+            </div>
+          </div>
+    </div>
+    <p>
+        Je vous invite à tester et apprécier ce mécanisme incroyable. Vous savez désormais construire un site web avec plus d'une page.<br> Cependant, il existe aussi des cas où les pages sont dans des dossiers différents comment faire pour crée un lien ?<br><br>
+        Excellente question. Pour y répondre, nous allons prendre l'exemple de l'arborescence suivante :<br>
+        <ul>
+            <li>Dossier principale</li>
+            <ul>
+                <li>Dossier2</li>
+                <ul><li>Fichier3</li></ul>
+                <li>Fichier1</li>
+                <li>Fichier2</li>
+            </ul>
+        </ul>
+        Trois cas de figures se présentent :
+        <ul>
+            <li><b>Lien vers un fichier de même niveau</b></li><br>Exemple avec le lien entre le Fichier1 et le Fichier2.<br>
+            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"fichier2.html"</span>&gt</span>Fichier2<span class="balise">&lt/a&gt</span>
+            <li><b>Lien vers un fichier de niveau inférieur</b></li><br>Exemple avec le lien entre le Fichier1 et le Fichier3.<br>
+            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"Dossier2/fichier3.html"</span>&gt</span>Fichier3<span class="balise">&lt/a&gt</span>
+            <li><b>Lien vers un fichier de niveau supérieur</b></li><br>Exemple avec le lien entre le Fichier3 et le Fichier1.<br>
+            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"../fichier1.html"</span>&gt</span>Fichier1<span class="balise">&lt/a&gt</span>
+        </ul>
+    </p>
+
+    <h2>3)Ancre</h2>
+    <p>
+        Nous venons d'apprendre à utiliser les liens hypertextes. Leur but est de faire des liens entre des pages web. Ils permettent également de créer 
+        des liens vers un endroit précis de la page sur laquelle ils sont, ou d'une autre page. Ces endroits précis sont appelés des <b>ancres</b>. Ajouter une ancre est très facile. 
+        Il faut tout d'abord ajouter un <b>identifiant unique</b> avec l'attribut <span style="color:orange;">id=""</span>, sur l'élément sur lequel on veut pointer.
+    </p>
+    <p class="alert alert-warning">
+        L'attribut id="" définit un identifiant qui doit être unique pour l'ensemble de la page. Cela permet de cibler un élément en particulier très facilement.
+    </p>
+    <p>
+        Une fois que l'identifiant est ajouté, il suffit de faire un lien vers l'élément en question grâce à la syntaxe ci-dessous.
+    </p>
+
+
+        <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+            <div>
+                <h4 style="color:white">Exempple d'ancre</h4>
+                    <code>
+                        <span class="balise">&lt!--élément avec l'identifiant--&gt</span><br>
+                        <span class="balise">&lth2 <span style="color:orange;">id</span>=<span style="color:green">"lienversh2"</span>&gt</span>Ma page<span class="balise">&lt/h2&gt</span><br>
+                        <span class="balise">&lt!--Le lien avec l'ancre--&gt</span><br>
+                        <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"#lienversh2"</span>&gt</span> Allez vers h2<span class="balise">&lt/a&gt</span><br>
+                           
+                    </code>
+            </div>
+          </div>
+          <p>Ainsi, quand l'utilisateur cliquera sur le lien avec l'ancre, il sera déplacé au niveau du <span class="balise">&lth2&gt</span> dans la page.</p>
+          <p class="alert alert-secondary">
+            Grâce au HTML5, il existe une ancre spéciale qui permet de faire remonter l'utilisateur en haut de la page : 
+            <span class="balise">#top</span>. Pour qu'elle fonctionne, il ne faut pas avoir identifié un de ses éléments avec l'<span class="balise">id="top"</span>.
+          </p>
+          <h2>4)Infobulle</h2>
+          <p>
+            L'attribut <span class="balise">title=""</span> est facultatif mais ô combien utile et utilisé. Il permet d'afficher une infobulle au survol du lien. Il s'utilise de la manière suivante :
+            <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+                <div>
+                    <h4 style="color:white">Exempple de lien avec infobulle</h4>
+                        <code>
+                            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"https://www.google.fr/"</span> <span style="color:orange;">title</span>=<span style="color:green">"Moteur de recherche"</span>&gt</span> Google<span class="balise">&lt/a&gt</span><br>
+                        </code>
+                </div>
+              </div>
+          </p>
+          <h2>5)Envoyer un e-mail</h2>
+          <p>
+            La balise <span class="balise">&lta&gt</span>  permet également de déclencher l'ouverture de l'application de messagerie de l'utilisateur pour lui permettre d'envoyer un nouvel e-mail au destinataire précisé. 
+            Pour ce faire, il n'y a pas d'attribut particulier mais simplement une syntaxte précise à respecter dans l'attribut <span class="balise">href=""</span> dont nous avons déjà parlé. Un exemple ci-dessous
+            <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+                <div>
+                    <h4 style="color:white">Exempple de lien pour envoyer un mail</h4>
+                        <code>
+                            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"mailto:sanaabdouldjelil5@gmail.com"</span> <span style="color:orange;">title</span>=<span style="color:green">"me contacter"</span>&gt</span> Envoyer un e-mail<span class="balise">&lt/a&gt</span><br>
+                        </code>
+                </div>
+              </div>
+          </p>
+          <h2>6)Appeler un numéro de téléphone</h2>
+          <p>
+            Semblable à la fonctionnalité qui permet de déclencher l'envoi d'un e-mail, la balise <span class="balise">&lta&gt</span> propose également de composer un numéro de téléphone. 
+            Avant que le HTML5 voit le jour, les numéros de téléphone étaient ajoutés en texte standard, dans un <span class="balise">&ltp&gt</span> par exemple. Grâce à cette fonctionnalité, 
+            un simple clic sur ce type de lien compose directement le numéro. C'est notamment très pratique depuis un smartphone. La syntaxe est similaire à celle de <b>mailto</b>.
+            <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+                <div>
+                    <h4 style="color:white">Exempple de lien pour téléphone</h4>
+                        <code>
+                            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"tel:+2250575087250"</span> <span style="color:orange;">title</span>=<span style="color:green">"Contacter moi"</span>&gt</span> Appeler moi<span class="balise">&lt/a&gt</span><br>
+                        </code>
+                </div>
+              </div>
+          </p>
+          <h2>7)Télécharger</h2>
+          <p>
+            L'attribut <span class="balise">download=""</span> est bien évidemment aussi facultatif et s'utilise dans des cas précis. En effet, il permet de forcer le téléchargement d'une ressource au lieu de la faire afficher par le navigateur web. 
+            Il est préférable d'utiliser cet attribut uniquement dans le cas précis du téléchargement d'une ressource pour ne pas trop contraindre l'utilisateur. Il s'utilise comme ceci :
+            <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+                <div>
+                    <h4 style="color:white">Exempple de lien pour télécharger</h4>
+                        <code>
+                            <span class="balise">&lta <span style="color:orange;">href</span>=<span style="color:green">"monfichier.txt"</span> <span style="color:orange;">download</span>=<span style="color:green">"superfichier.txt"</span>&gt</span> Télécharger mon fichier<span class="balise">&lt/a&gt</span><br>
+                        </code>
+                </div>
+              </div>
+              <a href="monfichier.txt" download="superfichier.txt">Télécharger mon fichier</a><br>
+              Dans le cas de cette utilisation, la valeur de l'attribut <span class="balise">download=""</span> sera utilisée pour nommer le fichier téléchargé. Vous pouvez également ne rien préciser et dans ce cas, le fichier téléchargé portera le même nom que celui du serveur, à savoir dans le cas de l'exemple, monfichier.txt.
+          </p>
+
+          <p class="alert alert-primary">
+            Il n'est pas rare, lorsque l'on navigue sur le web, de cliquer sur des liens qui ouvrent de nouveaux onglets. Pour reproduire cette mécanique, il faut utiliser un attribut avec une valeur précise : <span class="balise"><span style="color:orange">target</span>=<span style="color:green">"_blank"</span></span>. L'association de cet attribut avec cette valeur ouvrira le lien dans un nouvel onglet. Dans le fichier HTML
+          </p>
+          <h2>8)Les images</h2>
+          <p>
+            L'insertion d'une image dans une page HTML se fait à l'aide de la balise orpheline <span class="balise">&ltimg&gt</span>. Il n'y a donc pas de balise ouvrante ni fermante. Cette balise est toujours accompagnée de deux attributs :
+            <ul>
+                <li><span class="balise">src=""</span> : l'attribut permet de préciser <b>la source de l'image</b> à afficher. Il faut donc inscrire en valeur de cet attribut un lien relatif ou absolu avec l'image de son choix.</li>
+                <li><span class="balise">alt=""</span> : l'attribut indique le <b>texte alternatif</b> qui sera affiché si l'image ne se charge pas, peu importe la raison. Les robots des moteurs de recherche lisent également le contenu de cet attribut pour comprendre ce que l'image affiche à l'utilisateur.</li>
+                Sans plus attendre, ci-après un exemple de l'utilisation de la balise <span class="balise">&ltimg&gt</span>.
+            </ul>
+            <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+                <div>
+                    <h4 style="color:white">Afficher une image</h4>
+                        <code>
+                            <span class="balise">&ltimg <span style="color:orange;">src</span>=<span style="color:green">"imagetest.png"</span> <span style="color:orange;">alt</span>=<span style="color:green">"Ma belle maison de campagne"</span> /&gt</span><br>
+                        </code>
+                </div>
+              </div>
+              Resultat du code ci-dessus :<br>
+              <img src="imagetest.png" alt="aperçu du code ci-dessus" width="500" />
+              <br>
+          </p>
+          <p class="alert alert-danger">
+            Il faut faire attention aux noms des fichiers. Il est important de ne pas utiliser certains caractères pour éviter certains désagréments. 
+            Remplaçez les majuscules par des minuscules, n'utilisez pas les caractères accentués et spéciaux, et remplaçez les espaces par des tirets. 
+            En somme, remplacez <span style="text-decoration:line-through;";"><b>J'aime l'été.png</b></span> par <b>j-aime-l-ete.png</b>.
+          </p>
+          <h2>9)Infobulle</h2>
+          <p>
+            Tout comme sur la balise <span class="balise">&lta&gt</span>, l'attribut <span class="balise">title=""</span> peut être utilisé sur la balise <span class="balise">&ltimg&gt</span>.
+             Il est aussi facultatif, mais toujours aussi utile et utilisé. La mécanique ne change pas, il s'utilise de la même manière :
+            <div class="ratio" style="--bs-aspect-ratio: 30%; background-color: black;">
+                <div>
+                    <h4 style="color:white">Exempple de lien pour image avec infobulle</h4>
+                        <code>
+                            <span class="balise">&ltimg <span style="color:orange;">src</span>=<span style="color:green">"imagetest.png"</span> <span style="color:orange;">alt</span>=<span style="color:green">"aperçu du projet dans visualcode"</span> <span style="color:orange;">title</span>=<span style="color:green">"aperçu du projet dans visualcode"</span> /&gt</span><br>
+                        </code>
+                </div>
+              </div>
+              Resultat du code ci-dessus<br>
+              <img src="imagetest.png" alt="aperçu du projet dans visualcode" title="aperçu du projet dans visualcode" width="500" /><br>
+              Dans le cas de cette utilisation, la valeur de l'attribut <span class="balise">download=""</span> sera utilisée pour nommer le fichier téléchargé. Vous pouvez également ne rien préciser et dans ce cas, le fichier téléchargé portera le même nom que celui du serveur, à savoir dans le cas de l'exemple, monfichier.txt.
+          </p>
+          <p>
+            Le contenu de ce cours a été dense et vous reviendrez sûrement plusieurs fois dessus pour bien assimiler certaines notions, notamment celles des liens relatifs et absolus. 
+            Vous pouvez attaquer facilement le Quiz. Rendez-vous au prochain chapitre pour encore plus de balises HTML chao.
+          </p>
+    
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quiz5.html">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+    <button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="chapitre4.html">Chapitre Précedent</a></button>
+    <button id="basbuttonend" class="basbutton rounded float-end"><a href="chapitre6.html" title="passer au chapitre 7">Chapitre Suivant</a></button>
+</body>
+<br><br>
+<footer style="color: beige;">Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>

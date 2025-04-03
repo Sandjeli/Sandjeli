@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveau 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="chapitre3.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="#chap4">Chapitre 4</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Niveau 1</li>
+        </ol>
+    </nav>
+</div>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#intro">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="#chap4">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7.html#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Quiz Liste">Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+<body>
+    <p class="alert success">
+        Temps  de lecture : <span class="Temps">13 Minutes</span>
+    </p>
+
+    <h1 id="chap4">V.Chapitre 4 - Écrire une page en HTML5</h1>
+    
+    <h2 id="niv1">Niveau 1</h2>
+    <p>
+        La balise <span class="balise">&ltbody&gt</span> est restée vide trop longtemps , il faut que nous la complétions au plus vite. Nous allons réaliser un site web simple. Nous allons prendre comme exemple, un site personnel qui a pour objectif de se présenter.
+        Au cours de ce chapitre, nous allons enfin découvrir les balises HTML. Certaines de ces balises existent depuis les toutes premières versions, tandis que d'autres ont été introduites dans la dernière version. Au final, ça n'a que peu d'importance, c'est pour votre gouverne.
+    </p>
+    
+    <h3>1)Les titres</h3>
+    <p>
+        Les en-têtes HTML sont définis à l’aide des balises, <span class="balise">&lth1&gt</span> à <span class="balise">&lth6&gt</span>
+        <span class="balise">&lth1&gt</span> définit l’en-tête le plus important et <span class="balise">&lth6&gt</span> définit la rubrique la moins importante.<br><br>
+        <b>Copiez ce code dans votre fichier pour voir le résultat :</b>
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                <code>
+                    <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                    <span class="balise">&lthtml&gt</span><br>
+                    <span class="balise">&lthead&gt</span><br>
+                    <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                    <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                    <span class="balise">&lt/head&gt</span><br>
+                    <span class="balise">&ltbody&gt</span><br>
+                       <span class="balise">&lth1&gt</span>Heading 1<span class="balise">&lt/h1&gt</span><br>
+                       <span class="balise">&lth2&gt</span>Heading 2<span class="balise">&lt/h2&gt</span><br>
+                       <span class="balise">&lth3&gt</span>Heading 3<span class="balise">&lt/h3&gt</span><br>
+                       <span class="balise">&lth4&gt</span>Heading 4<span class="balise">&lt/h4&gt</span><br>
+                       <span class="balise">&lth5&gt</span>Heading 5<span class="balise">&lt/h5&gt</span><br>
+                       <span class="balise">&lth6&gt</span>Heading 6<span class="balise">&lt/h6&gt</span><br>
+                    <span class="balise">&lt/body&gt</span><br>
+                    <span class="balise">&lt/html&gt</span>
+                </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <center><h4>Resultat</h4></center>
+                <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Titre de la page affiché dans la barre du navigateur</title>
+</head>
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</body>
+</html>
+            </div>
+          </div>
+    </div>
+    <p>
+        Les titres <span class="balise">&lth1&gt</span> doivent être utilisés pour les titres principaux, suivis des titres  <span class="balise">&lth2&gt</span> qui est lui aussi suivis de <span class="balise">&lth3&gt</span>  ,puis des moins importants, et ainsi de suite jusques <span class="balise">&lth6&gt</span>
+    </p>
+    <h2>2)Les paragraphes et le retour à la ligne</h2>
+    <p>
+        L’élément HTML <span class="balise">&ltp&gt</span> définit un paragraphe.
+        Un paragraphe commence toujours sur une nouvelle ligne, 
+        et les navigateurs ajoutent automatiquement des espaces (une marge) avant et après un paragraphe.<br><br>
+        <b>Copiez ce code dans votre fichier pour voir le résultat :</b>
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                <code>
+                    <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                    <span class="balise">&lthtml&gt</span><br>
+                    <span class="balise">&lthead&gt</span><br>
+                    <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                    <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                    <span class="balise">&lt/head&gt</span><br>
+                    <span class="balise">&ltbody&gt</span><br>
+                       <span class="balise">&ltp&gt</span><br>
+                       On m’a dit que tu parlais aux hommes mais moi je n'entends rien.
+                       Si les tiens sont égarés, où veux-tu encore me trouver ?
+                       Ne me laisse pas dans ce doute seule au milieu de ce néant.
+                       Sana
+                       <span class="balise">&lt/p&gt</span><br>
+                       <span class="balise">&ltp&gt</span><br>
+                       Si tu es Dieu, viens briser ce mur de silence.
+                       Si tu es Dieu, parle-moi que je t'entende.
+                       Sans intermédiaire, sans masque, sans chaîne.
+                       Sana.
+                       <span class="balise">&lt/p&gt</span><br>
+                    <span class="balise">&lt/body&gt</span><br>
+                    <span class="balise">&lt/html&gt</span>
+                </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <center><h4>Resultat</h4></center>
+                <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Titre de la page affiché dans la barre du navigateur</title>
+</head>
+<body>
+<p>
+On m’a dit que tu parlais aux hommes mais moi je n'entends rien. Si les tiens sont égarés, où veux-tu encore me trouver ? Ne me laisse pas dans ce doute seule au milieu de ce néant. Sana </p>
+<p>
+Si tu es Dieu, viens briser ce mur de silence. Si tu es Dieu, parle-moi que je t'entende. Sans intermédiaire, sans masque, sans chaîne. Sana. </p>
+</body>
+</html>
+            </div>
+          </div>
+    </div>
+    <p class="alert alert-success">
+         Le contenu est purement fictif. Écrivez ce que vous souhaitez et commencez même votre premier site, si vous avez la motivation. Par contre, merci de ne pas me tenir rigueur de ce qui peut me passer par la tête. Je suis rigoureusement mon traitement.<h1>&#128517</h1>
+    </p>
+    <p>
+        Vous découvrez la mise en forme par défaut du HTML. Pour le moment, tout ce que vous écrivez aura la mise en forme par défaut du HTML dans le navigateur web. 
+        C'est particulièrement brut et moche. Comment améliorer ça ? La mise en forme du HTML se fait à l'aide d'un autre langage informatique : 
+        le <a href="#">CSS</a> (Cascading Style Sheets). Ce sera l'objet d'un cours entier bon bref <b>dagninin Narcis</b>.<br><br>
+        Pour réaliser un saut à la ligne on utilise la balise auto-fermente <span class="balise">&ltbr /&gt</span>. <br>La balise <span class="balise">&lthr /&gt</span> insère une ligne horizontale, utilisée pour séparer des sections.
+        <br><br>
+        <b>Copiez ce code dans votre fichier pour voir le résultat, 
+            ensuite introduiser la balise <span class="balise">&lthr /&gt</span> entre les deux paragraphe pour voir le resultat. :</b>
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                <code>
+                    <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                    <span class="balise">&lthtml&gt</span><br>
+                    <span class="balise">&lthead&gt</span><br>
+                    <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                    <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                    <span class="balise">&lt/head&gt</span><br>
+                    <span class="balise">&ltbody&gt</span><br>
+                       <span class="balise">&ltp&gt</span><br>
+                       On m’a dit que tu parlais aux hommes mais moi je n'entends rien.<span class="balise">&ltbr /&gt</span><br>
+                       Si les tiens sont égarés, où veux-tu encore me trouver ?<span class="balise">&ltbr /&gt</span><br>
+                       Ne me laisse pas dans ce doute seule au milieu de ce néant.<span class="balise">&ltbr /&gt</span><br>
+                       Sana
+                       <span class="balise">&lt/p&gt</span>
+                       <span class="balise">&ltp&gt</span>
+                       Si tu es Dieu, viens briser ce mur de silence.<span class="balise">&ltbr /&gt</span>
+                       Si tu es Dieu, parle-moi que je t'entende.<span class="balise">&ltbr /&gt</span>
+                       Sans intermédiaire, sans masque, sans chaîne.<span class="balise">&ltbr /&gt</span>
+                       Sana.
+                       <span class="balise">&lt/p&gt</span><br>
+                    <span class="balise">&lt/body&gt</span><br>
+                    <span class="balise">&lt/html&gt</span>
+                </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <center><h4>Resultat</h4></center>
+                <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Titre de la page affiché dans la barre du navigateur</title>
+</head>
+<body>
+<p>
+On m’a dit que tu parlais aux hommes mais moi je n'entends rien.<br />
+Si les tiens sont égarés, où veux-tu encore me trouver ?<br />
+Ne me laisse pas dans ce doute seule au milieu de ce néant.<br />
+Sana </p> <p> Si tu es Dieu, viens briser ce mur de silence.<br /> Si tu es Dieu, parle-moi que je t'entende.<br /> Sans intermédiaire, sans masque, sans chaîne.<br /> Sana. </p>
+</body>
+</html>
+            </div>
+          </div>
+    </div>
+
+    <h2>3)La mise en valeur</h2>
+    <p>
+        Au sein de vos paragraphes, certains mots ou expressions sont plus importants que d'autres. 
+        Dans un logiciel de traitement de texte, vous auriez sauté sur le gras ou l'italique. 
+        En HTML, c'est différent, on indique seulement l'importance de portions de texte. 
+        La mise en forme se fait avec le CSS. Ne perdez pas de vue que le HTML ne permet pas de mise en forme. 
+        Il propose différents moyens de mettre en valeur le texte. Nous nous focaliserons sur les balises normales <span class="balise">&ltstrong&gt</span> et <span class="balise">&ltb&gt</span>.
+        <span class="balise">&ltstrong&gt</span> est utilisé pour insister sur l'importance du contenu, tandis que <span class="balise">&ltb&gt</span> met simplement le texte en gras.
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                <h4 style="color:white">Mise en valeur</h4>
+                    <code>
+                        <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                        <span class="balise">&lthtml&gt</span><br>
+                        <span class="balise">&lthead&gt</span><br>
+                        <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                        <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                        <span class="balise">&lt/head&gt</span><br>
+                        <span class="balise">&ltbody&gt</span><br>
+                        <span class="balise">&ltp&gt</span><br>
+                           <span class="balise">&ltstrong&gt</span>Sana<span class="balise">&lt/strong&gt</span> Abdoul Djelil<br>
+                           Kouadio <span class="balise">&ltb&gt</span>Kouadio jean Martial<span class="balise">&ltb&gt</span><br>
+                           <span class="balise">&lt/p&gt</span><br>
+                        <span class="balise">&lt/body&gt</span><br>
+                        <span class="balise">&lt/html&gt</span>
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <h4>Resultat</h4>
+                <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Titre de la page affiché dans la barre du navigateur</title>
+</head>
+<body>
+<p>
+    Mise en valeur du nom :
+<strong>Sana</strong> Abdoul Djelil<br>
+Mise en gras du prenom : 
+Kouadio <b>Kouadio jean Martial</b>
+</p>
+</body>
+</html>
+            </div>
+          </div>
+    </div>
+    <h2>4)Les listes</h2>
+    <p>
+        Les listes nous permettent au cours de notre rédaction de mieux structurer nos différents blocs de texte et d'ordonner des informations. 
+        Le HTML permet de reproduire des listes ordonnées ou non. En HTML, on parle de :
+        <ul>
+            <li>Listes à puces : <span class="balise">&ltul&gt</span></li>
+            <li>Listes numérotées : <span class="balise">&ltol&gt</span></li>
+        </ul>
+        Les éléments d'une liste sont délimités par la balise normale <span class="balise">&ltli&gt</span></li>.
+    </p>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                <h4 style="color:white">Liste à puce</h4>
+                    <code>
+                        <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                        <span class="balise">&lthtml&gt</span><br>
+                        <span class="balise">&lthead&gt</span><br>
+                        <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                        <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                        <span class="balise">&lt/head&gt</span><br>
+                        <span class="balise">&ltbody&gt</span><br>
+                        <span class="balise">&ltul&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Sana Abdoul Djelil<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Kouadio Kouadio jean Martial<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Yobouet Konan Hermann<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>N'dri Koffi Nichiren<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Diabaté Aboubacar Siriki<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&lt/ul&gt</span><br>
+                        <span class="balise">&lt/body&gt</span><br>
+                        <span class="balise">&lt/html&gt</span>
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <h4>Resultat</h4>
+                <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <meta charset="utf-8" />
+                        <title> Titre de la page affiché dans la barre du navigateur</title>
+                        </head>
+                        <body>
+                           <ul>
+                            <li>Sana Abdoul Djelil</li>
+                            <li>Kouadio Kouadio jean Martial</li>
+                            <li>Yobouet Konan Hermann</li>
+                            <li>N'dri Koffi Nichiren</li>
+                            <li>Diabaté Aboubacar Siriki</li>
+                           </ul>
+                        </body>
+                        </html>
+            </div>
+          </div>
+    </div>
+    <div class="flex">
+        <div class="ratio" style="--bs-aspect-ratio: 100%;">
+            <div class="containecode">
+                <h4 style="color:white">Liste à numérotée</h4>
+                    <code>
+                        <span class="balise">&lt!DOCTYPE <span style="color:orange;">html</span>&gt</span><br>
+                        <span class="balise">&lthtml&gt</span><br>
+                        <span class="balise">&lthead&gt</span><br>
+                        <span class="balise">&ltmeta <span style="color:orange;">charset</span>=<span style="color:green;">"utf-8"</span> /&gt</span><br>
+                        <span class="balise">&lttitle&gt</span> Titre de la page affiché dans la barre du navigateur<span class="balise">&lt/title&gt</span><br>
+                        <span class="balise">&lt/head&gt</span><br>
+                        <span class="balise">&ltbody&gt</span><br>
+                        <span class="balise">&ltol&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Sana Abdoul Djelil<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Kouadio Kouadio jean Martial<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Yobouet Konan Hermann<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>N'dri Koffi Nichiren<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&ltli&gt</span>Diabaté Aboubacar Siriki<span class="balise">&lt/li&gt</span><br>
+                           <span class="balise">&lt/ol&gt</span><br>
+                        <span class="balise">&lt/body&gt</span><br>
+                        <span class="balise">&lt/html&gt</span>
+                    </code>
+            </div>
+          </div>
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+            <div>
+                <h4>Resultat</h4>
+                <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <meta charset="utf-8" />
+                        <title> Titre de la page affiché dans la barre du navigateur</title>
+                        </head>
+                        <body>
+                           <ol>
+                            <li>Sana Abdoul Djelil</li>
+                            <li>Kouadio Kouadio jean Martial</li>
+                            <li>Yobouet Konan Hermann</li>
+                            <li>N'dri Koffi Nichiren</li>
+                            <li>Diabaté Aboubacar Siriki</li>
+                           </ol>
+                        </body>
+                        </html>
+            </div>
+          </div>
+    </div>
+    <p>Les listes peuvent s'imbriquer pour former une liste ou arborescence complexe.</p>
+    <h2>7)Les balises &ltdiv&gt et &ltspan&gt</h2>
+    <p>
+        Les balises normales <span class="balise">&ltdiv&gt</span> et <span class="balise">&ltspan&gt</span> sont utiles car elles ne représentent rien de particulier. 
+        Elles sont très utilisées pour appliquer des styles de mise en forme. Cependant, elles ont tout de même un comportement par défaut. 
+        Considérons pour le moment que la balise <span class="balise">&ltspan&gt</span> s'utilise à l'intérieur d'un <span class="balise">&ltdiv&gt</span>, <span class="balise">&ltp&gt</span>, 
+        <span class="balise">&lth?&gt</span> ou <span class="balise">&ltli&gt</span>, tandis que la balise <span class="balise">&ltdiv&gt</span> englobe toutes ces balises.
+        C'est à dire que <span class="balise">&ltdiv&gt</span> est un conteneur de niveau bloc (structure des sections), tandis que <span class="balise">&ltspan&gt</span> est un conteneur de niveau ligne (style inline).  <span class="balise">&ltdiv&gt</span> et  <span class="balise">&ltspan&gt</span> sont souvent utilisés pour appliquer des styles CSS.<br>
+        Nous avons aussi un moyen de mettre des commentaires dans notre code avec <span class="balise">&lt!--ceci est un commentaire--&gt</span> elles ne s'affichent pas a l'utilisateur mais permettent au développeur de se retrouver
+        dans son code.
+        Nous approfondirons leur comportement dans le cours sur le CSS.
+    </p>
+    <p>
+        C'est un nouveau chapitre dense qui se termine. Nous avons appris plein de nouvelles balises et à quoi allait nous servir le CSS.<h1>&#128516;</h1>
+    </p>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quiz3.html">Faire le Quiz pour ce chapitre</a></button>
+    <br><br><hr>
+    <p class="alert alert-warning">
+        Ce cours sur le HTML en est un parmi tant d'autres. 
+        Le web regorge de ressources sur le développement web.
+         Celui-ci a été rédigé par mes soins et est orienté pour les débutants.
+         Il est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce cours a été rédigé en mars 2025.
+    </p>
+    <button id="basbuttonstart" class="basbutton rounded float-start" title="passer au chapitre Précedent"><a href="chapitre2.html">Chapitre Précedent</a></button>
+    <button id="basbuttonend" class="basbutton rounded float-end"><a href="chapitre4.html" title="passer au chapitre 5">Chapitre Suivant</a></button>
+</body>
+<br><br>
+<footer style="color: beige;">Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>

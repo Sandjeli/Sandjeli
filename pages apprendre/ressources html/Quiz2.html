@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Quiz.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../ressources html/apprendrehtml.html" title="page du Cours">Apprendre HTML5</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../ressources html/Quiz2.html" title="Raffraichir">Raffraichir</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</head>
+<br><br><br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item"><a href="chapitre2.html">chapitre2 & 3</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Quiz</li>
+        </ol>
+      </nav>
+</div>
+<body id="corp">
+    <h1 id="titre">Quiz: Chapitres 2 et 3 - Introduction à la syntaxe HTML et Structure de base d'une page HTML5</h1><br>
+    <p id="divalert" class="alert"></p>
+    <br>
+    <form id="forme">
+        <h2>Chapitre II: Introduction à la syntaxe HTML</h2><br>
+        <fielset>
+            <legend>1/Comment nommez-vous un fichier HTML ?</legend>
+            A. Avec une extension .htm<br>
+            B. Avec une extension .html<br>
+            C. Avec une extension .css<br><br>
+            <input id="input1" type="text" placeholder="Votre choix : A, B ou C"/><br><hr>
+        </fielset>
+        <fielset>
+            <legend>2/Que signifie "balise auto-fermante" ?</legend>
+            A. Une balise qui n'a pas besoin d'une balise fermante.<br>
+            B. Une balise qui n'a pas besoin d'une balise ouvrante.<br>
+            C. Une balise qui utilise exclusivement des majuscules<br><br>
+            <input id="input2" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>3/Comment ajoutez-vous un attribut à une balise HTML ?</legend>
+            A. Avec des accolades { }<br>
+            B. Entre chevrons < ><br>
+            C. En l'ajoutant dans la balise ouvrante ou auto-fermante<br><br>
+            <input id="input3" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <fielset>
+            <legend>4/Identifiez la balise normale parmi les suivantes :</legend>
+            A. &ltinput /&gt<br>
+            B. &ltp&gtHello&lt/p&gt<br>
+            C. &ltlink /&gt<br><br>
+            <input id="input4" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <h2>Chapitre 3: Structure de base d'une page HTML5</h2><br>
+        <fielset>
+            <legend>5/Quel est le rôle de la déclaration &lt!DOCTYPE&gt ?</legend>
+            A. Elle définit l'encodage des caractères.<br>
+            B. Elle aide les navigateurs à interpréter correctement la page.<br>
+            C. Elle déclare la langue utilisée dans la page.<br><br>
+            <input id="input5" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset><br>
+        <fielset>
+            <legend>6/Où se trouve la balise &lthead&gt dans un fichier HTML ?</legend>
+            A. À l'intérieur de la balise &ltbody&gt.<br>
+            B. Avant la balise &ltbody&gt.<br>
+            C. Après la balise &ltbody&gt.<br><br>
+            <input id="input6" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>7/Quelle balise contient le contenu visible par l'utilisateur ?</legend>
+            A. &lthtml&gt.<br>
+            B. &lthead&gt.<br>
+            C. &ltbody&gt.<br><br>
+            <input id="input7" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>8/Que signifie l'attribut lang="fr" dans &lthtml lang="fr"&lg ?</legend>
+            A. Il déclare l'encodage utilisé par la page.<br>
+            B. Il indique que la langue de la page est le français.<br>
+            C. Il spécifie la version de HTML.<br><br>
+            <input id="input8" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>9/Que fait la balise &ltmeta charset="utf-8" /&gt ?</legend>
+            A. Elle déclare la langue de la page.<br>
+            B. Elle spécifie l'encodage des caractères de la page.<br>
+            C. Elle définit le titre de la page.<br><br>
+            <input id="input9" type="text" placeholder="Votre choix : A, B ou C" /><br>
+        </fielset><br>
+        <fielset>
+            <legend>10/Qui à crée ce Quiz 😈?</legend>
+            A. Bill Gate<br>
+            B. Sana Abdoul Djelil<br>
+            C. Yaemfo<br><br>
+            <input id="input10" type="text" placeholder="Votre choix : A, B ou C" /><br><hr>
+        </fielset>
+        <input id="submitbutton" type="submit" onclick="Valider()">
+        
+    </form>
+    <script src="Quiz2.js"></script>
+</body>
+</html>

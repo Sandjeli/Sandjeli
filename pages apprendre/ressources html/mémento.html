@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="../moi.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mémento</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="chapitre2.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mémento.html" title="Raffraichir la page">Apprendre HTML5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../../index.html" title="Home">Accueil</a>
+          <a class="nav-link" href="../../apprendre.html" title="Choix du Cours">Apprendre</a>
+          <a class="nav-link" href="#">Astuce</a>
+          <a class="nav-link" href="../../creation.html" title="Voir mes créations">Mes créations</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="alert alert-primary">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../apprendre.html">Apprendre</a></li>
+          <li class="breadcrumb-item"><a href="../ressources html/apprendrehtml.html">Apprendre HTML5</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mémento</li>
+        </ol>
+    </nav>
+</div>
+<div id="Sommaire"><button class="btn btn-primary navbutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sommaire</button></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sommaire Cours HTML</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ol>
+            <li><a href="apprendrehtml.html#intro">Introduction</a></li>
+            <li><a href="apprendrehtml.html#intro">Chapitre 1 : Le navigateur et l'éditeur de texte</a></li>
+            <li><a href="chapitre2.html#chap2">Chapitre 2 : Introduction a la syntaxe HTML</a></li>
+            <li><a href="chapitre2.html#chap3">Chapitre 3 : Structure de base d'une page HTML5</a></li>
+            <li><a href="#">Chapitre 4 - Écrire une page en HTML5</a></li>
+            <ul>
+                <li><a href="chapitre4.html#niv1">Niveau 1</a></li>
+                <li><a href="chapitre4.html#niv2">Niveau 2</a></li>
+                <li><a href="chapitre5.html#niv3">Niveau 3</a></li>
+                <li><a href="chapitre6.html#niv4">Niveau 4</a></li>
+                <li><a href="chapitre7.html#niv5">Niveau 5</a></li>
+            </ul>
+            <li><a href="chapitre7.html#conclusion">Conclusion</a></li>
+            <li><a href="Quizliste.html" title="Voir les Quiz">Liste de Quiz</a></li>
+            <li><a href="Exercices/exercice.html">Exercices</a></li>
+            <li><a href="mémento.html">Mémento</a></li>
+        </ol>
+    </div>
+  </div>
+  <body>
+
+    <h1>Mémento</h1>
+				<h2>Code minimal d'une page web au format HTML</h2>
+                <div class="flex">
+                    <div class="ratio" style="--bs-aspect-ratio: 25%;">
+                        <div class="containecode">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta charset="utf-8" /&gt;<br>
+                                &lt;title&gt;Titre de la page affiché dans la barre du navigateur&lt;/title&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;
+                            </code>
+                        </div>
+                      </div>
+                </div>
+
+				<h2>Commentaires</h2>
+				<pre><code><span class="balise">&lt;!-- Mon premier commentaire --&gt;</span></code></pre>
+
+				<h2>Balises générales</h2>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;html&gt;</code></td>
+						<td>Balise principale, elle est obligatoire au début et à la fin de la page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;head&gt;</code></td>
+						<td>En-tête de la page. Le contenu de cette balise ne s'affiche pas</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;body&gt;</code></td>
+						<td>Encadre le contenu de la page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+
+				<h2>Balises de l'en-tête</h2>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;link /&gt;</code></td>
+						<td>Déclaration d'une feuille de style (CSS)</td>
+						<td><i class="fas fa-check-square text-success"></i>&nbsp;Oui</td>
+					</tr>
+					<tr>
+						<td><code>&lt;meta /&gt;</code></td>
+						<td>Métadonnées de la page HTML</td>
+						<td><i class="fas fa-check-square text-success"></i>&nbsp;Oui</td>
+					</tr>
+					<tr>
+						<td><code>&lt;script&gt;</code></td>
+						<td>Déclaration d'un fichier JavaScript (JS)</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;title&gt;</code></td>
+						<td>Titre de la page HTML</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+
+				<h2>Balises génériques ou universelles</h2>
+				<p>Les balises génériques ou universelles sont des balises qui n'ont pas de sens sémantique. En effet, toutes les autres balises ont un sens. La balise <code>&lt;p&gt;</code> représente un paragraphe, la balise <code>&lt;time&gt;</code> une date ou heure, etc. Ces balises sont utilisées pour la construction d'un site quand aucune autre balise plus sémantique n'est possible.</p>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;div&gt;</code></td>
+						<td>Balise générique, sans sens sémantique, de type block</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;span&gt;</code></td>
+						<td>Balise générique, sans sens sémantique, de type inline</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+
+				<h2>Balises de structation du texte</h2>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;abbr&gt;</code></td>
+						<td>Abréviation</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;blockquote&gt;</code></td>
+						<td>Citation longue</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;q&gt;</code></td>
+						<td>Citation courte</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+
+					<tr>
+						<td><code>&lt;strong&gt;</code></td>
+						<td>Mise en valeur forte</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;h1&gt;</code></td>
+						<td>Titre de niveau 1. On compte seulement une balise &lt;h1&gt; par page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;h2&gt;</code></td>
+						<td>Titre de niveau 2. Il peut y avoir plusieurs &lt;h2&gt; par page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;h3&gt;</code></td>
+						<td>Titre de niveau 3. Il peut y avoir plusieurs &lt;h3&gt; par page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;h4&gt;</code></td>
+						<td>Titre de niveau 4. Il peut y avoir plusieurs &lt;h4&gt; par page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;h5&gt;</code></td>
+						<td>Titre de niveau 5. Il peut y avoir plusieurs &lt;h5&gt; par page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;h6&gt;</code></td>
+						<td>Titre de niveau 6</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;p&gt;</code></td>
+						<td>Paragraphe de texte. Cette balise peut en contenir d'autres mais pas la totalité</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;a&gt;</code></td>
+						<td>Lien hypertexte</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;img /&gt;</code></td>
+						<td>Image</td>
+						<td><i class="fas fa-check-square text-success"></i>&nbsp;Oui</td>
+					</tr>
+					<tr>
+						<td><code>&lt;video&gt;</code></td>
+						<td>Vidéo</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;time&gt;</code></td>
+						<td>Date ou heure</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;s&gt;</code></td>
+						<td>Texte barré</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;sub&gt;</code></td>
+						<td>En indice</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;sup&gt;</code></td>
+						<td>En exposant</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;hr /&gt;</code></td>
+						<td>Barre horizontale / rupture thématique</td>
+						<td><i class="fas fa-check-square text-success"></i>&nbsp;Oui</td>
+					</tr>
+				</table>
+
+				<h2>Balises pour la gestion des listes</h2>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;ul&gt;</code></td>
+						<td>Liste à puces, non numérotée</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;ol&gt;</code></td>
+						<td>Liste numérotée</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;li&gt;</code></td>
+						<td>Élément d'une liste</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+
+				<h2>Balises structurantes ou sectionnantes</h2>
+				<p>Ces balises permettent de structurer le site web et apportent une touche de sémantique.</p>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;header&gt;</code></td>
+						<td>Partie supérieure de la page, en-tête</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;footer&gt;</code></td>
+						<td>Pied de page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;nav&gt;</code></td>
+						<td>Navigation</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;aside&gt;</code></td>
+						<td>Contenus complémentaires</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;article&gt;</code></td>
+						<td>Article</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;section&gt;</code></td>
+						<td>Section d'une page. Il peut y avoir N sections par page</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+
+				<h2>Balises pour les tableaux</h2>
+				<p>Ces balises permettent de structurer les tableaux en HTML5.</p>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;table&gt;</code></td>
+						<td>Déclaration d'un tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tr&gt;</code></td>
+						<td>Ligne d'un tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;td&gt;</code></td>
+						<td>Cellule d'un tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;th&gt;</code></td>
+						<td>Cellule d'en-tête d'un tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;thead&gt;</code></td>
+						<td>Entoure la ou les lignes d'en-têtes des colonnes du tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tbody&gt;</code></td>
+						<td>Entoure la ou les lignes du corps du tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tfoot&gt;</code></td>
+						<td>Entoure la ou les lignes du pied du tableau</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+
+				<h2>Balises pour les formulaires</h2>
+				<p>Ces balises permettent de structurer les formulaires en HTML5. On retrouve des listes déroulantes, des zones de textes mais également des cases à cocher ou encore des boutons radio.</p>
+				<table class="table table-striped table-hover table-bordered table-responsive">
+					<tr>
+						<th class="w-25">Balise</th>
+						<th class="w-50">Description</th>
+						<th class="w-25">Auto-fermante ?</th>
+					</tr>
+					<tr>
+						<td><code>&lt;form&gt;</code></td>
+						<td>Déclaration d'un formulaire</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;label&gt;</code></td>
+						<td>Intitulé du champ du formulaire</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;input /&gt;</code></td>
+						<td>Champ d'un formulaire. L'attribut <code>type=""</code> permet de faire différent type de champ (text, password, submit, etc.)</td>
+						<td><i class="fas fa-check-square text-success"></i>&nbsp;Oui</td>
+					</tr>
+					<tr>
+						<td><code>&lt;select&gt;</code></td>
+						<td>Liste déroulante</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;option&gt;</code></td>
+						<td>Élément d'une liste déroulante</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;button&gt;</code></td>
+						<td>Bouton pour un formulaire</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;textarea&gt;</code></td>
+						<td>Zone de saisie de texte multiligne</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;fieldset&gt;</code></td>
+						<td>Groupe de champ d'un formulaire</td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+					<tr>
+						<td><code>&lt;legend&gt;</code></td>
+						<td>Libellé du <code>&lt;fieldset&gt;</code></td>
+						<td><i class="fas fa-exclamation-circle text-danger"></i>&nbsp;Non</td>
+					</tr>
+				</table>
+			</div>
+
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"><a id="Quiz" href="Quizliste.html">Voir liste de Quiz html</a></button>
+    <br><br><hr>
+         Ce mémento est non-exhaustif. Si vous repérez une erreur ou un oubli, vous pouvez bien évidemment me contacter.
+         <a href="http://wa.me/2250575087250" target="_blank">me contacter</a>
+        </p>
+    <p class="alert alert-success">
+        Ce mémento a été rédigé en mars 2025.
+    </p>
+    <center><button id="basbuttonende"><a href="Exercices/exercice.html" title="passer à la section des exercices"><span style="color:black">Voir les Exercices</span></a></button></center>
+</body>
+<br><br>
+<footer style="color: beige;">Sana Abdoul Djelil (Sandjeli 😉)</footer>
+</html>
