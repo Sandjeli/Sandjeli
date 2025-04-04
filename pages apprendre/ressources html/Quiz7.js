@@ -39,6 +39,7 @@ function Valider() {
         document.getElementById('forme').innerHTML = `
             <button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="chapitre7.html">Revoir le Cours</a></button>
             <button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="Quiz7.html">Refaire le Quiz</a></button>
-            <button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="Exercices/exercice.html">Voir les Exercices</a></button><br><br>Vous pouvez le refaire autant de fois que vous le souhaitez.`;
+            <button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="mémento.html">Voir le mémento</a></button>
+            <button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="indexe.html">Voir les Exercices</a></button><br><br>Vous pouvez le refaire autant de fois que vous le souhaitez.`;
     }
 }
