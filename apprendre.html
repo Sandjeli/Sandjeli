@@ -11,6 +11,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+        function copierTexte() {
+            const texte = document.getElementById("lien");
+            texte.select();
+            texte.setSelectionRange(0, texte.value.length); // Pour mobile
+            navigator.clipboard.writeText(texte.value).then(() => {
+                alert("Lien copié !");
+            });
+        }
+    </script>
 </head>
 <body>
     <nav class="nav">
@@ -27,7 +37,10 @@
             
                         <div id="droite" class="col-12">
                             <center><h1>Sana Abdoul Djelil</h1></center>
-                            <center><span id="span2">Elève ingénieurs en Construction Navale</span></center><br>
+                            <h1>Copier facilement mon lien</h1>
+                            <input type="text" id="lien" value="https://sandjeli.github.io/Sandjeli/index.html" readonly>
+                            <button onclick="copierTexte()">Copier le lien</button>
+                            <center><span id="span2">Elève ingénieur en Construction Navale</span></center><br>
                             <p id="text">
                                 <img id="identité" src="pages apprendre/moi.jpg" alt="Ma plus belle photo" title="C'est bien moi 😉">
                                 Bienvenue sur mon portail d'apprentissage. Je suis... vous le savez déjà si vous êtes arrivé jusqu'ici😅. Je suis étudiant à <a href="https://usp.edu.ci/" title="site de mon Université">l'Université polytechnique de San Pedro</a>. Vous trouverez principalement sur ce site des cours et des ressources sur les technologies web. Il y a également tout un tas d'<a href="index.html" title="mon site">informations sur moi</a>, dont le monde se fout royalement, mais que je liste quand même pour les curieux et pour moi. Oui, j'adore le codage et la robotique. Je suis également un fan indéfectible d'animés 🤫 depuis mon premier combat en tant que ninja auprès de <a href="index.html#mes" title="tableau de mes mangas préféré">Madara Uchiwa</a>(je rigole 🤣). Amateur d'ésotérisme et de science, je déguste d'excellents livres et articles en ligne. Et par-dessus tout, je suis passionné par la programmation depuis bien longtemps, j'ai développé une compétence avérée pour cette discipline.
