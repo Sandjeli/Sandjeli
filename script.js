@@ -8,7 +8,7 @@ function showprofile(){
     textprofile.innerHTML=textprofileorigine;
     oc++
     }else if(oc===1){
-        textprofile.innerHTML="appuyez sur <strong>Profile</strong> pour afficher";
+        textprofile.innerHTML="appuyez sur <strong>Profil</strong> pour afficher";
         oc--
     }else{
         textprofile.innerText="veillez raffraichir la page svp";
