@@ -85,15 +85,15 @@ function Valider(){
 
     if(oc<10){
         affichageclass.classList.add("alert-warning");
-        document.getElementById('divalert').innerHTML = 'Vous avez eux une moyenne de <span style="color:red;">'+oc+'/22, C\'est insuffisant</span> revoyez le cours si necessaire pour reprendre le Quiz';
+        document.getElementById('divalert').innerHTML = 'Vous avez eux une moyenne de <span style="color:red;">'+oc+'/20, C\'est insuffisant</span> revoyez le cours si necessaire pour reprendre le Quiz';
         document.getElementById('forme').innerHTML ='<button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="Quiz.html">Refaire le Quiz</a></button><button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="apprendrehtml.html">Revoir le Cours</a></button>'
     }else if(oc>=10 && oc<=15){
         affichageclass.classList.add("alert-secondary");
-        document.getElementById('divalert').innerHTML = 'Vous avez eux une moyenne de <span style="color:blue;">'+oc+'/22 C\'est bien</span> vous pouvez passer au chapitre suivant';
+        document.getElementById('divalert').innerHTML = 'Vous avez eux une moyenne de <span style="color:blue;">'+oc+'/20 C\'est bien</span> vous pouvez passer au chapitre suivant';
         document.getElementById('forme').innerHTML ='<button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="apprendrehtml.html">Revoir le Cours</a></button><button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="Quiz.html">Refaire le Quiz</a></button><button class="buttonrefreshquiz"><a id="buttonrefreshquiz" href="chapitre2.html">Chapitre Suivant</a></button><br><br>Vous pouvez le faire autant de fois que vous le voulez';
     }else{
         affichageclass.classList.add("alert-success");
-        document.getElementById('divalert').innerHTML = 'Vous avez eux une moyenne de <span style="color:green;">'+oc+'/22 C\'est très bien</span> vous pouvez passer au chapitre suivant';
+        document.getElementById('divalert').innerHTML = 'Vous avez eux une moyenne de <span style="color:green;">'+oc+'/20 C\'est très bien</span> vous pouvez passer au chapitre suivant';
         document.getElementById('forme').innerHTML ='<button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="apprendrehtml.html">Revoir le Cours</a></button><button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="Quiz.html">Refaire le Quiz</a></button><button class="buttonrefreshquiz"><a class="buttonrefreshquiz" href="chapitre2.html">Chapitre Suivant</a></button><br><br>Vous pouvez le faire autant de fois que vous le voulez';
     }
     // document.getElementById('forme').innerHTML ='<button id="buttonrefreshquiz"><a id="buttonrefreshquiz" href="Quiz.html">Refaire le Quiz</a></button><button id="buttonrefreshquiz"><a id="buttonrefreshquiz" href="chapitre2.html">Chapitre Suivant</a></button><br><br>Vous pouvez le faire autant de fois que vous le voulez';
