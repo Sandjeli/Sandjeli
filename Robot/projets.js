@@ -1,5 +1,5 @@
 // Charger les projets depuis le fichier JSON
-fetch('projets.json')
+fetch('/Robot/projects.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('projets-container');
