@@ -1,0 +1,20 @@
+[
+  {
+    "titre": "Détecteur de mouvement",
+    "description": "Un projet utilisant un capteur PIR pour détecter la présence humaine.",
+    "image": "images/pir.jpg",
+    "lien": "projets/detecteur-pir.html"
+  },
+  {
+    "titre": "Station météo",
+    "description": "Un projet Arduino qui mesure la température et l’humidité.",
+    "image": "images/meteo.jpg",
+    "lien": "projets/station-meteo.html"
+  },
+  {
+    "titre": "Robot éviteur d'obstacles",
+    "description": "Un petit robot qui utilise des capteurs ultrasoniques pour éviter les obstacles.",
+    "image": "images/robot.jpg",
+    "lien": "projets/robot.html"
+  }
+]
