@@ -2,7 +2,7 @@ let oc=0
 //Profil
 let textprofileorigine=document.getElementById("profil").innerText;
 let textprofile=document.getElementById("profil");
-textprofile.innerHTML="appuyez sur <strong>Profile</strong> pour afficher";
+textprofile.innerHTML="appuyez sur <strong>Profil</strong> pour afficher";
 function showprofile(){
     if(oc===0){
     textprofile.innerHTML=textprofileorigine;
@@ -882,3 +882,4 @@ document.getElementById('S4').onclick = function() {
     affiche3();
     S4();
 };
+
