@@ -81,5 +81,6 @@ footer {
 .card img {
   max-width: 500px;
   max-height: 500px;
+  margin: 0 auto; /* top/bottom 0, left/right auto */
   object-fit: cover;
 }
