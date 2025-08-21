@@ -1,25 +1,37 @@
 // Tableau de projets
 const Basics = [
   {
-    titre: "Titre",
-    description: "Description",
-    image: "./images/reserve.jpg"
+    titre: "Clignotement LED",
+    description: "Faire clignoter une LED avec Arduino.",
+    image: "./images/reserve.jpg",
+    longDescription: "Ce projet explique comment programmer une LED pour clignoter avec un Arduino Uno. Il est parfait pour débuter.",
+    technos: ["Arduino UNO", "LED", "Résistance"],
+    github: "https://github.com/tonpseudo/led",
+    video: "https://www.youtube.com/watch?v=example"
   }
 ];
 
 const Intermediaires = [
   {
-    titre: "Titre",
-    description: "Description",
-    image: "./images/reserve.jpg"
+    titre: "Station météo",
+    description: "Mesure de la température et humidité.",
+    image: "./images/reserve.jpg",
+    longDescription: "Ce projet lit la température et l'humidité à l'aide d'un capteur DHT11 et affiche les valeurs sur un écran LCD.",
+    technos: ["Arduino", "Capteur DHT11", "LCD I2C"],
+    github: "https://github.com/tonpseudo/meteo",
+    video: "https://www.youtube.com/watch?v=example2"
   }
 ];
 
 const Avances = [
   {
-    titre: "Titre",
-    description: "Description",
-    image: "./images/reserve.jpg"
+    titre: "Robot éviteur d’obstacles",
+    description: "Un robot autonome qui évite les obstacles.",
+    image: "./images/reserve.jpg",
+    longDescription: "Grâce à des capteurs ultrason, ce robot détecte et évite les obstacles. Un projet avancé en électronique et programmation.",
+    technos: ["Arduino Mega", "Capteurs ultrason", "Moteurs DC"],
+    github: "https://github.com/tonpseudo/robot",
+    video: "https://www.youtube.com/watch?v=example3"
   }
 ];
 
@@ -37,6 +49,7 @@ function afficherProjets(liste, containerId) {
         <div class="card-body">
           <h5 class="card-title">${projet.titre}</h5>
           <p class="card-text">${projet.description}</p>
+          <a href="projet.html?titre=${encodeURIComponent(projet.titre)}" class="btn btn-primary">Voir le projet</a>
         </div>
       </div>
     `;
