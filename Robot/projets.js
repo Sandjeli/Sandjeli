@@ -1,30 +1,25 @@
 // Tableau de projets
 const Basics = [
   {
-    titre: "🚨 Alarme incendie avec capteur de flamme",
-    description: "Détecteur de flamme + buzzer qui alerte en cas d'incendie.",
-    image: "./images/flamme.jpg"
-  },
-  {
-    titre: "💡 Allumer une LED avec un bouton",
-    description: "Projet simple pour comprendre les entrées/sorties Arduino.",
-    image: "./images/led.jpg"
+    titre: "Titre",
+    description: "Description",
+    image: "./images/reserve.jpg"
   }
 ];
 
 const Intermediaires = [
   {
-    titre: "🌡️ Station météo",
-    description: "Mesurer température et humidité avec DHT11.",
-    image: "./images/meteo.jpg"
+    titre: "Titre",
+    description: "Description",
+    image: "./images/reserve.jpg"
   }
 ];
 
 const Avances = [
   {
-    titre: "🤖 Robot éviteur d'obstacles",
-    description: "Un robot mobile qui détecte et évite les obstacles avec des capteurs ultrason.",
-    image: "./images/robot.jpg"
+    titre: "Titre",
+    description: "Description",
+    image: "./images/reserve.jpg"
   }
 ];
 
