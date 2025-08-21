@@ -53,3 +53,32 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
 }
+
+/* Titres des sections */
+.niveauprojet {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  background: chartreuse;
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+}
+
+/* Cartes projets */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
