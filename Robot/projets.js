@@ -1,4 +1,6 @@
 // Tableau de projets
+
+// Debut Basics
 const Basics = [
   {
     titre: "Clignotement LED",
@@ -11,6 +13,7 @@ const Basics = [
   }
 ];
 
+// Debut Intermediaire
 const Intermediaires = [
   {
     titre: "Station météo",
@@ -23,6 +26,8 @@ const Intermediaires = [
   }
 ];
 
+
+// Debut Avances
 const Avances = [
   {
     titre: "Robot éviteur d’obstacles",
@@ -34,6 +39,20 @@ const Avances = [
     video: "https://www.youtube.com/watch?v=example3"
   }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Fonction pour générer les cartes
 function afficherProjets(liste, containerId) {
