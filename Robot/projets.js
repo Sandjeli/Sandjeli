@@ -10,8 +10,8 @@ const Basics = [
 // Tableau de projets Intermédiaires
 const Intermediaires = [
   {
-    titre: "📡 Station météo connectée",
-    description: "Mesure température, humidité et envoie les données en ligne.",
+    titre: "Titre",
+    description: "Description",
     image: "./Amelioration pages/Docs/Certificat introduction à la cyber securité.png"
   }
 ];
@@ -19,8 +19,8 @@ const Intermediaires = [
 // Tableau de projets Avancés
 const Avancés = [
   {
-    titre: "📡 Station météo connectée",
-    description: "Mesure température, humidité et envoie les données en ligne.",
+    titre: "Titre",
+    description: "Description",
     image: "./Amelioration pages/Docs/Certificat introduction à la cyber securité.png"
   }
 ];
