@@ -79,6 +79,7 @@ footer {
 }
 
 .card img {
-  height: 200px;
+  max-width: 500px;
+  max-height: 500px;
   object-fit: cover;
 }
