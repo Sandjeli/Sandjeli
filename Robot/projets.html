@@ -37,33 +37,54 @@
   </header>
 
   <!-- Conteneur -->
-  <main class="container my-5">
 
-    <!-- Projets Basics -->
-    <h2 class="niveauprojet mb-4">🔰 Projets Basics</h2>
-    <section class="containerBasic">
+  <div class="row">
+  <div class="col-2" style="background-color: darkslategray;">
+    <div id="simple-list-example" class="list-group sticky-top d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+        <br><br><br><br>
+      <a class="p-1 rounded" href="#simple-list-item-1">Projets Basics</a>
+      <a class="p-1 rounded" href="#simple-list-item-2">Projets Intermédiaires</a>
+      <a class="p-1 rounded" href="#simple-list-item-3">Projets Avancés</a>
+      <!--<a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
+      <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>-->
+    </div>
+  </div>
+  <div class="col-10">
+    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h2 id="simple-list-item-1" class="niveauprojet mb-4">🔰 Projets Basics</h2>
+      <p>
+        <section class="containerBasic">
       <div class="row" id="projets-containerBasic">
         <!-- Les projets Basics seront ajoutés ici -->
       </div>
     </section>
+      </p>
 
-    <!-- Projets Intermédiaires -->
-    <h2 class="niveauprojet mt-5 mb-4">⚡ Projets Intermédiaires</h2>
-    <section class="containerIntermediaire">
+      <h2 id="simple-list-item-2" class="niveauprojet mt-5 mb-4">⚡ Projets Intermédiaires</h2>
+      <p>
+        <section class="containerIntermediaire">
       <div class="row" id="projets-containerIntermediaire">
         <!-- Les projets Intermédiaires seront ajoutés ici -->
       </div>
     </section>
+      </p>
 
-    <!-- Projets Avancés -->
-    <h2 class="niveauprojet mt-5 mb-4">🤖 Projets Avancés</h2>
-    <section class="containerAvancés">
+      <h2 id="simple-list-item-3" class="niveauprojet mt-5 mb-4">🤖 Projets Avancés</h2>
+      <p>
+        <section class="containerAvancés">
       <div class="row" id="projets-containerAvancés">
         <!-- Les projets Avancés seront ajoutés ici -->
       </div>
     </section>
+      </p>
 
-  </main>
+      <!--<h4 id="simple-list-item-4">Item 4</h4>
+      <p>...</p>
+      <h4 id="simple-list-item-5">Item 5</h4>
+      <p>...</p>-->
+    </div>
+  </div>
+</div>
 
   <!-- Pied de page -->
   <footer class="text-center p-3 bg-dark text-white">
