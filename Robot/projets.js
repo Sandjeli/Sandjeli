@@ -1,9 +1,9 @@
 // Tableau de projets Basics
 const Basics = [
   {
-    titre: "🚨 Alarme incendie avec capteur de flamme",
-    description: "Détecteur de flamme + buzzer qui alerte en cas d'incendie.",
-    image: "./Amelioration pages/Docs/Certificat Fonsit.jpg"
+    titre: "Titre",
+    description: "Description",
+    image: "Images/reserve.jpg"
   },
 ];
 
