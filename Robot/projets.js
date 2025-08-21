@@ -1,22 +1,59 @@
-// Charger les projets depuis le fichier JSON
-fetch('/Robot/projects.json')
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById('projets-container');
+// Tableau de projets Basics
+const Basics = [
+  {
+    titre: "🚨 Alarme incendie avec capteur de flamme",
+    description: "Détecteur de flamme + buzzer qui alerte en cas d'incendie.",
+    image: "./Amelioration pages/Docs/Certificat Fonsit.jpg"
+  },
+];
 
-    data.forEach(projet => {
-      // Création du bloc projet
-      const card = document.createElement('div');
-      card.classList.add('projet-card');
+// Tableau de projets Intermédiaires
+const Intermediaires = [
+  {
+    titre: "📡 Station météo connectée",
+    description: "Mesure température, humidité et envoie les données en ligne.",
+    image: "./Amelioration pages/Docs/Certificat introduction à la cyber securité.png"
+  }
+];
 
-      card.innerHTML = `
-        <img src="${projet.image}" alt="${projet.titre}">
-        <h2>${projet.titre}</h2>
-        <p>${projet.description}</p>
-        <a href="${projet.lien}" class="btn">Voir plus</a>
-      `;
+// Tableau de projets Avancés
+const Avancés = [
+  {
+    titre: "📡 Station météo connectée",
+    description: "Mesure température, humidité et envoie les données en ligne.",
+    image: "./Amelioration pages/Docs/Certificat introduction à la cyber securité.png"
+  }
+];
 
-      container.appendChild(card);
-    });
-  })
-  .catch(error => console.error("Erreur de chargement des projets :", error));
+// Sélection des conteneurs
+const containerBasic = document.getElementById("projets-containerBasic");
+const containerIntermediaire = document.getElementById("projets-containerIntermediaire");
+const containerAvancés = document.getElementById("projets-containerAvancés");
+
+// Fonction pour générer une carte projet
+function creerCarte(projet) {
+  return `
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
+        <div class="card-body">
+          <h5 class="card-title">${projet.titre}</h5>
+          <p class="card-text">${projet.description}</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// Remplissage automatique des conteneurs
+Basics.forEach(projet => {
+  containerBasic.innerHTML += creerCarte(projet);
+});
+
+Intermediaires.forEach(projet => {
+  containerIntermediaire.innerHTML += creerCarte(projet);
+});
+
+Avancés.forEach(projet => {
+  containerAvancés.innerHTML += creerCarte(projet);
+});
