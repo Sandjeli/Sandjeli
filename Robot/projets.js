@@ -3,7 +3,7 @@ const Basics = [
   {
     titre: "Clignotement LED",
     description: "Faire clignoter une LED avec Arduino.",
-    image: "./images/reserve.jpg",
+    image: "./identite.jpg",
     longDescription: "Ce projet explique comment programmer une LED pour clignoter avec un Arduino Uno. Il est parfait pour débuter.",
     technos: ["Arduino UNO", "LED", "Résistance"],
     github: "https://github.com/tonpseudo/led",
