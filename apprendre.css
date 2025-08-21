@@ -1,82 +1,141 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    align-items: center;
-    text-align: center;
-    /*background: linear-gradient(to left, rgb(3, 75, 3), rgb(16, 222, 16));*/
-    background-image: url("https://th.bing.com/th/id/R.78e868b56514ab95d6546e9acfed8779?rik=WHFidpiwvtm%2bGQ&pid=ImgRaw&r=0");
-}
-nav{
-    display:block;
-    background: blue;
-}
-.navbutton{
-    background: greenyellow;
-    font-weight: bold;
-    border-radius:10px;
-    margin: 5px;
-}
-a{
-    color:darkblue;
-    font-weight: bold;
+/* 🌐 Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f5f7fa, #e4f0ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-h1{
-    text-align: center;
-    font-size:50px;
-    font-weight: bold;
-    color:blue;
-    text-transform: uppercase;
-    /*color: linear-gradient(to top, aliceblue, blue);*/
-    margin:5px;
+/* 🔝 Navigation */
+nav {
+  background: white;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-div{
-    display: inline;
-    margin-top:10px;
-    width:100%;
+.navbutton {
+  background: #0077ff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
 }
-
-.card{
-    margin:5px;
+.navbutton a {
+  text-decoration: none;
+  color: white;
 }
-.row{
-    padding: 5px;
-    margin: 0px;
-}
-
-
-.logo{
-    display: inline;
-    margin: 10px;
-    width:160px;
-    height: 160px;
+.navbutton:hover {
+  background: #005fcc;
+  transform: translateY(-2px);
 }
 
-#identité{
-    display: inline;
-    float: left;
-    margin: 20px;
-    width:160px;
-    height: 160px;
-    border:3px green solid;
-    border-radius: 80px;
+/* 🖼️ Présentation */
+#droite {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: justify;
 }
-#span1,#span2{
-    color:black;
-    font-size:larger;
-    font-weight: bold;
-    text-transform: capitalize;
+#identité {
+  float: left;
+  margin: 15px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #0077ff;
+  object-fit: cover;
 }
-#text{
-    color:black;
-    float: right;
+#span2 {
+  color: #0077ff;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
-#html{
-    margin-left: 10px;
+
+/* 📝 Titres */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0077ff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
-#droite{
+h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* 📦 Cartes de cours */
+.card {
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  vertical-align: top;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card-img-top {
+  max-height: 160px;
+  object-fit: contain;
+  background: #f9f9f9;
+}
+.card-body {
+  text-align: center;
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0077ff;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card .btn {
+  background: #0077ff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.card .btn:hover {
+  background: #005fcc;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+  #identité {
+    float: none;
     display: block;
-    background-color: white;
-    width: 100%;
-    margin: 5px 0px 10px 0px;
-    font-size: smaller;
+    margin: 0 auto 20px;
+  }
+  #droite {
+    text-align: center;
+  }
+  .card {
+    width: 90% !important;
+    margin: 10px auto;
+    display: block;
+  }
+}
+#premier{
+    color:black;background-color: aliceblue;
+    text-align: center;
 }
