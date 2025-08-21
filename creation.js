@@ -45,10 +45,12 @@ function valider(){
             ecran.innerHTML="mon choix est plus grand";
             essai++
             essaie.innerHTML=essai
+            input.innerHTML="Choisissez un autre nombre";
         }else if(IAchoiX<input.value){
             ecran.innerHTML="mon choix est plus petit";
             essai++
             essaie.innerHTML=essai
+            input.innerHTML="Choisissez un autre nombre";
         }else if(IAchoiX==input.value){
             essai++
             essaie.innerHTML=essai
@@ -59,3 +61,4 @@ function valider(){
             ecran.innerHTML="saisir un nombre valide svp";
         }
     }
+
