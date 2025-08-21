@@ -1,39 +1,42 @@
-// Tableau de projets Basics
+// Tableau de projets
 const Basics = [
   {
-    titre: "Titre",
-    description: "Description",
-    image: "Images/reserve.jpg"
+    titre: "🚨 Alarme incendie avec capteur de flamme",
+    description: "Détecteur de flamme + buzzer qui alerte en cas d'incendie.",
+    image: "./images/flamme.jpg"
   },
+  {
+    titre: "💡 Allumer une LED avec un bouton",
+    description: "Projet simple pour comprendre les entrées/sorties Arduino.",
+    image: "./images/led.jpg"
+  }
 ];
 
-// Tableau de projets Intermédiaires
 const Intermediaires = [
   {
-    titre: "Titre",
-    description: "Description",
-    image: ".Images/reserve.jpg"
+    titre: "🌡️ Station météo",
+    description: "Mesurer température et humidité avec DHT11.",
+    image: "./images/meteo.jpg"
   }
 ];
 
-// Tableau de projets Avancés
-const Avancés = [
+const Avances = [
   {
-    titre: "Titre",
-    description: "Description",
-    image: ".Images/reserve.jpg"
+    titre: "🤖 Robot éviteur d'obstacles",
+    description: "Un robot mobile qui détecte et évite les obstacles avec des capteurs ultrason.",
+    image: "./images/robot.jpg"
   }
 ];
 
-// Sélection des conteneurs
-const containerBasic = document.getElementById("projets-containerBasic");
-const containerIntermediaire = document.getElementById("projets-containerIntermediaire");
-const containerAvancés = document.getElementById("projets-containerAvancés");
+// Fonction pour générer les cartes
+function afficherProjets(liste, containerId) {
+  const container = document.getElementById(containerId);
 
-// Fonction pour générer une carte projet
-function creerCarte(projet) {
-  return `
-    <div class="col-md-4 mb-4">
+  liste.forEach(projet => {
+    const col = document.createElement("div");
+    col.className = "col-md-4 mb-4";
+
+    col.innerHTML = `
       <div class="card h-100 shadow-sm">
         <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
         <div class="card-body">
@@ -41,19 +44,13 @@ function creerCarte(projet) {
           <p class="card-text">${projet.description}</p>
         </div>
       </div>
-    </div>
-  `;
+    `;
+
+    container.appendChild(col);
+  });
 }
 
-// Remplissage automatique des conteneurs
-Basics.forEach(projet => {
-  containerBasic.innerHTML += creerCarte(projet);
-});
-
-Intermediaires.forEach(projet => {
-  containerIntermediaire.innerHTML += creerCarte(projet);
-});
-
-Avancés.forEach(projet => {
-  containerAvancés.innerHTML += creerCarte(projet);
-});
+// Appel pour chaque catégorie
+afficherProjets(Basics, "projets-containerBasic");
+afficherProjets(Intermediaires, "projets-containerIntermediaire");
+afficherProjets(Avances, "projets-containerAvancés");
