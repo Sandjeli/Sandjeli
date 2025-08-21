@@ -12,7 +12,7 @@ const Intermediaires = [
   {
     titre: "Titre",
     description: "Description",
-    image: "./Amelioration pages/Docs/Certificat introduction à la cyber securité.png"
+    image: ".Images/reserve.jpg"
   }
 ];
 
@@ -21,7 +21,7 @@ const Avancés = [
   {
     titre: "Titre",
     description: "Description",
-    image: "./Amelioration pages/Docs/Certificat introduction à la cyber securité.png"
+    image: ".Images/reserve.jpg"
   }
 ];
 
