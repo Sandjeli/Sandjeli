@@ -35,7 +35,7 @@ const Avances = [
     image: "./images/Xion1.jpg",
     longDescription: "Grâce à des capteurs ultrason, ce robot détecte et évite les obstacles. Un projet avancé en électronique et programmation.",
     technos: ["Arduino Uno", "Capteurs ultrason", "Moteurs DC + Roues", "Driver L298N","Servo Moteur SG90","Câble de connexion"],
-    github: "https://github.com/Sandjeli/robot",
+    github: "./Fichiers/Xion2code.pdf",
     video: "./Fichiers/VXION2.mp4"
   }
 ];
