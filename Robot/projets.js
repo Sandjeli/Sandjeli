@@ -32,10 +32,10 @@ const Avances = [
   {
     titre: "Robot éviteur d’obstacles",
     description: "Un robot autonome qui évite les obstacles.",
-    image: "./images/reserve.jpg",
+    image: "./images/Xion1.jpg",
     longDescription: "Grâce à des capteurs ultrason, ce robot détecte et évite les obstacles. Un projet avancé en électronique et programmation.",
-    technos: ["Arduino Mega", "Capteurs ultrason", "Moteurs DC"],
-    github: "https://github.com/tonpseudo/robot",
+    technos: ["Arduino Uno", "Capteurs ultrason", "Moteurs DC + Roues", "Driver L298N","Servo Moteur SG90","Câble de connexion"],
+    github: "https://github.com/Sandjeli/robot",
     video: "https://www.youtube.com/watch?v=example3"
   }
 ];
