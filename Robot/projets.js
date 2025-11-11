@@ -18,7 +18,7 @@ const Intermediaires = [
   {
     titre: "Bras Robotique",
     description: "Bras Robotique contrôlé par joystick.",
-    image: "./images/Bras.jpg",
+    image: "./images/Bras.JPG",
     longDescription: "Ce bras robotique est conçu pour être manipulé facilement grâce à un joystick, offrant une interface intuitive pour contrôler ses mouvements. Il permet de réaliser des tâches de précision comme saisir, déplacer ou orienter des objets. Sa conception met en avant la mécanique articulée et la fluidité des gestes, ce qui en fait un outil idéal pour l’apprentissage de la robotique, les démonstrations pédagogiques ou les projets de prototypage. Compact et robuste, il illustre parfaitement l’intégration entre électronique, programmation et contrôle manuel.",
     technos: ["01 Arduino uno", "04 Servos moteurs SG90", "01 Moteur pas à pas 28BYJ-48","Un joystick","Câble de connexion"],
     github: "./Fichiers/Brascode.pdf",
