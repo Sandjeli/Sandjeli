@@ -16,13 +16,13 @@ const Basics = [
 // Debut Intermediaire
 const Intermediaires = [
   {
-    titre: "Station météo",
-    description: "Mesure de la température et humidité.",
-    image: "./images/reserve.jpg",
-    longDescription: "Ce projet lit la température et l'humidité à l'aide d'un capteur DHT11 et affiche les valeurs sur un écran LCD.",
-    technos: ["Arduino", "Capteur DHT11", "LCD I2C"],
-    github: "https://github.com/tonpseudo/meteo",
-    video: "https://www.youtube.com/watch?v=example2"
+    titre: "Bras Robotique",
+    description: "Bras Robotique contrôlé par joystick.",
+    image: "./images/Bras.jpg",
+    longDescription: "Ce bras robotique est conçu pour être manipulé facilement grâce à un joystick, offrant une interface intuitive pour contrôler ses mouvements. Il permet de réaliser des tâches de précision comme saisir, déplacer ou orienter des objets. Sa conception met en avant la mécanique articulée et la fluidité des gestes, ce qui en fait un outil idéal pour l’apprentissage de la robotique, les démonstrations pédagogiques ou les projets de prototypage. Compact et robuste, il illustre parfaitement l’intégration entre électronique, programmation et contrôle manuel.",
+    technos: ["01 Arduino uno", "05 Servos moteurs SG90", "01 Moteur pas à pas 28BYJ-48","Un joystick","Câble de connexion"],
+    github: "./Fichiers/Brascode.pdf",
+    video: "./Fichiers/Bras.mp4"
   }
 ];
 
