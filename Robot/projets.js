@@ -53,6 +53,8 @@ const Avances = [
 
 // Sélection du container HTML
 const containerBasic = document.getElementById("projets-containerBasic");
+const containerInter = document.getElementById("projets-containerIntermediaire");
+const containerAvances = document.getElementById("projets-containerAvancés");
 
 // Ajouter les projets dans le container
 Basics.forEach(projet => {
@@ -75,3 +77,44 @@ Basics.forEach(projet => {
 
   containerBasic.appendChild(card);
 });
+
+// Ajouter projets Intermédiaires
+Intermediaires.forEach(projet => {
+  const card = document.createElement("div");
+  card.classList.add("col-4", "mb-3");
+  card.innerHTML = `
+    <div class="card h-100">
+      <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
+      <div class="card-body">
+        <h5 class="card-title">${projet.titre}</h5>
+        <p class="card-text">${projet.description}</p>
+      </div>
+      <div class="card-footer">
+        <a href="${projet.github}" class="btn btn-primary" target="_blank">Voir le code</a>
+        <a href="${projet.video}" class="btn btn-secondary" target="_blank">Voir la vidéo</a>
+      </div>
+    </div>
+  `;
+  containerInter.appendChild(card);
+});
+
+// Ajouter projets Avancés
+Avances.forEach(projet => {
+  const card = document.createElement("div");
+  card.classList.add("col-4", "mb-3");
+  card.innerHTML = `
+    <div class="card h-100">
+      <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
+      <div class="card-body">
+        <h5 class="card-title">${projet.titre}</h5>
+        <p class="card-text">${projet.description}</p>
+      </div>
+      <div class="card-footer">
+        <a href="${projet.github}" class="btn btn-primary" target="_blank">Voir le code</a>
+        <a href="${projet.video}" class="btn btn-secondary" target="_blank">Voir la vidéo</a>
+      </div>
+    </div>
+  `;
+  containerAvances.appendChild(card);
+});
+
