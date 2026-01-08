@@ -10,7 +10,16 @@ const Basics = [
   technos: ["Arduino UNO", "Module RFID MFRC522", "LED RGB", "Résistances 220Ω", "Câbles de connexion"],
   github: "./Fichiers/RFID_LED_Code.pdf",
   video: "./Fichiers/RFID_LED_Demo.mp4"
-}
+},
+ {
+    titre: "Clignotement LED",
+    description: "Faire clignoter une LED avec Arduino.",
+    image: "./images/reserve.jpg",
+    longDescription: "Ce projet explique comment programmer une LED pour clignoter avec un Arduino Uno. Il est parfait pour débuter.",
+    technos: ["Arduino UNO", "LED", "Résistance"],
+    github: "https://github.com/tonpseudo/led",
+    video: "https://www.youtube.com/watch?v=example"
+  }
 ];
 
 // Debut Intermediaire
