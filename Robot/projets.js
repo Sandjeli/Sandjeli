@@ -10,7 +10,7 @@ const Basics = [
     technos: ["Arduino UNO", "LED", "Résistance"],
     github: "https://github.com/tonpseudo/led",
     video: "https://www.youtube.com/watch?v=example"
-  }
+  },
 
   {
   titre: "Contrôle d'accès RFID",
