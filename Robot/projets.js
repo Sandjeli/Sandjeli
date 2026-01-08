@@ -1,7 +1,6 @@
 // Tableau de projets
 
 // Debut Basics
-// Debut Basics
 const Basics = [
   {
     titre: "Clignotement LED",
@@ -11,18 +10,8 @@ const Basics = [
     technos: ["Arduino UNO", "LED", "Résistance"],
     github: "https://github.com/tonpseudo/led",
     video: "https://www.youtube.com/watch?v=example"
-  },
-  {
-    titre: "Contrôle d'accès RFID",
-    description: "Système RFID pour allumer une LED selon l'UID d'une carte.",
-    image: "./images/RFID.png",
-    longDescription: "Ce projet met en œuvre un système de contrôle d'accès utilisant un module RFID MFRC522 et un Arduino. Lorsqu'une carte RFID est approchée, son UID est lu et comparé à un UID autorisé. Si la carte est reconnue, une LED verte s'allume pour indiquer l'accès autorisé ; sinon, une LED rouge signale un accès refusé. Ce projet illustre la lecture de cartes RFID, la comparaison de données, et le contrôle de sorties électroniques via Arduino. Il constitue une base pédagogique pour les applications de sécurité, les systèmes de porte automatisés et l'apprentissage de l'intégration matériel-logiciel.",
-    technos: ["Arduino UNO", "Module RFID MFRC522", "LED RGB", "Résistances 220Ω", "Câbles de connexion"],
-    github: "./Fichiers/RFID_LED_Code.pdf",
-    video: "./Fichiers/RFID_LED_Demo.mp4"
   }
 ];
-
 
 // Debut Intermediaire
 const Intermediaires = [
@@ -51,47 +40,31 @@ const Avances = [
   }
 ];
 
-// Sélection des containers
-const containerBasic = document.getElementById("projets-containerBasic");
-const containerInter = document.getElementById("projets-containerIntermediaire");
-const containerAvances = document.getElementById("projets-containerAvances"); // sans accent
 
-// Fonction pour créer une carte de projet avec bouton "Voir le détail"
-function createCard(projet) {
-  const card = document.createElement("div");
-  card.classList.add("col-4", "mb-3");
+// Fonction pour générer les cartes
+function afficherProjets(liste, containerId) {
+  const container = document.getElementById(containerId);
 
-  card.innerHTML = `
-    <div class="card h-100 shadow-sm">
-      <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
-      <div class="card-body">
-        <h5 class="card-title">${projet.titre}</h5>
-        <p class="card-text">${projet.description}</p>
+  liste.forEach(projet => {
+    const col = document.createElement("div");
+    col.className = "col-md-4 mb-4";
+
+    col.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
+        <div class="card-body">
+          <h5 class="card-title">${projet.titre}</h5>
+          <p class="card-text">${projet.description}</p>
+          <a href="projet.html?titre=${encodeURIComponent(projet.titre)}" class="btn btn-primary">Voir le projet</a>
+        </div>
       </div>
-      <div class="card-footer d-flex justify-content-between">
-        <a href="projet.html?titre=${encodeURIComponent(projet.titre)}" class="btn btn-primary">Voir le détail</a>
-        ${projet.github ? `<a href="${projet.github}" class="btn btn-secondary" target="_blank">Voir le code</a>` : ""}
-        ${projet.video ? `<a href="${projet.video}" class="btn btn-info" target="_blank">Voir la vidéo</a>` : ""}
-      </div>
-    </div>
-  `;
+    `;
 
-  return card;
+    container.appendChild(col);
+  });
 }
 
-// Ajouter les projets Basics
-Basics.forEach(projet => {
-  containerBasic.appendChild(createCard(projet));
-});
-
-// Ajouter les projets Intermédiaires
-Intermediaires.forEach(projet => {
-  containerInter.appendChild(createCard(projet));
-});
-
-// Ajouter les projets Avancés
-Avances.forEach(projet => {
-  containerAvances.appendChild(createCard(projet));
-});
-
-
+// Appel pour chaque catégorie
+afficherProjets(Basics, "projets-containerBasic");
+afficherProjets(Intermediaires, "projets-containerIntermediaire");
+afficherProjets(Avances, "projets-containerAvancés");
