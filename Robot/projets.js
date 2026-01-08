@@ -2,16 +2,7 @@
 
 // Debut Basics
 const Basics = [
-  {
-    titre: "Clignotement LED",
-    description: "Faire clignoter une LED avec Arduino.",
-    image: "./images/reserve.jpg",
-    longDescription: "Ce projet explique comment programmer une LED pour clignoter avec un Arduino Uno. Il est parfait pour débuter.",
-    technos: ["Arduino UNO", "LED", "Résistance"],
-    github: "https://github.com/tonpseudo/led",
-    video: "https://www.youtube.com/watch?v=example"
-  },
-  {
+ {
   titre: "Contrôle d'accès RFID",
   description: "Système RFID pour allumer une LED selon l'UID d'une carte.",
   image: "./images/RFID.png",
