@@ -53,42 +53,26 @@ const Avances = [
 
 
 
+const containerBasic = document.getElementById("projets-containerBasic");
 
+// Ajouter les projets
+projetsBasics.forEach(projet => {
+  const card = document.createElement("div");
+  card.classList.add("col-4", "mb-3");
 
-
-
-
-
-
-
-
-
-
-
-// Fonction pour générer les cartes
-function afficherProjets(liste, containerId) {
-  const container = document.getElementById(containerId);
-
-  liste.forEach(projet => {
-    const col = document.createElement("div");
-    col.className = "col-md-4 mb-4";
-
-    col.innerHTML = `
-      <div class="card h-100 shadow-sm">
-        <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
-        <div class="card-body">
-          <h5 class="card-title">${projet.titre}</h5>
-          <p class="card-text">${projet.description}</p>
-          <a href="projet.html?titre=${encodeURIComponent(projet.titre)}" class="btn btn-primary">Voir le projet</a>
-        </div>
+  card.innerHTML = `
+    <div class="card h-100">
+      <img src="${projet.image}" class="card-img-top" alt="${projet.titre}">
+      <div class="card-body">
+        <h5 class="card-title">${projet.titre}</h5>
+        <p class="card-text">${projet.description}</p>
       </div>
-    `;
+      <div class="card-footer">
+        <a href="${projet.github}" class="btn btn-primary" target="_blank">Voir le code</a>
+        <a href="${projet.video}" class="btn btn-secondary" target="_blank">Voir la vidéo</a>
+      </div>
+    </div>
+  `;
 
-    container.appendChild(col);
-  });
-}
-
-// Appel pour chaque catégorie
-afficherProjets(Basics, "projets-containerBasic");
-afficherProjets(Intermediaires, "projets-containerIntermediaire");
-afficherProjets(Avances, "projets-containerAvancés");
+  containerBasic.appendChild(card);
+});
