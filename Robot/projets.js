@@ -15,9 +15,9 @@ const Basics = [
   {
   titre: "Contrôle d'accès RFID",
   description: "Système RFID pour allumer une LED selon l'UID d'une carte.",
-  image: "./images/RFID.JPG",
+  image: "./images/RFID.PNG",
   longDescription: "Ce projet met en œuvre un système de contrôle d'accès utilisant un module RFID MFRC522 et un Arduino. Lorsqu'une carte RFID est approchée, son UID est lu et comparé à un UID autorisé. Si la carte est reconnue, une LED verte s'allume pour indiquer l'accès autorisé ; sinon, une LED rouge signale un accès refusé. Ce projet illustre la lecture de cartes RFID, la comparaison de données, et le contrôle de sorties électroniques via Arduino. Il constitue une base pédagogique pour les applications de sécurité, les systèmes de porte automatisés et l'apprentissage de l'intégration matériel-logiciel.",
-  technos: ["Arduino UNO", "Module RFID MFRC522", "LED verte", "LED rouge", "Résistances 220Ω", "Câbles de connexion"],
+  technos: ["Arduino UNO", "Module RFID MFRC522", "LED RGB", "Résistances 220Ω", "Câbles de connexion"],
   github: "./Fichiers/RFID_LED_Code.pdf",
   video: "./Fichiers/RFID_LED_Demo.mp4"
 }
