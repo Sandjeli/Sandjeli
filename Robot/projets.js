@@ -34,14 +34,14 @@ const Intermediaires = [
     video: "./Fichiers/Bras robotique.mp4"
   },
  {
-    titre: "Bras Robotique",
-    description: "Bras Robotique contrôlé par joystick.",
-    image: "./images/Bras.JPG",
-    longDescription: "Ce bras robotique est conçu pour être manipulé facilement grâce à un joystick, offrant une interface intuitive pour contrôler ses mouvements. Il permet de réaliser des tâches de précision comme saisir, déplacer ou orienter des objets. Sa conception met en avant la mécanique articulée et la fluidité des gestes, ce qui en fait un outil idéal pour l’apprentissage de la robotique, les démonstrations pédagogiques ou les projets de prototypage. Compact et robuste, il illustre parfaitement l’intégration entre électronique, programmation et contrôle manuel.",
-    technos: ["01 Arduino uno", "04 Servos moteurs SG90", "01 Moteur pas à pas 28BYJ-48","Un joystick","Câble de connexion"],
-    github: "./Fichiers/Brascode.pdf",
-    video: "./Fichiers/Bras robotique.mp4"
-  }
+  titre: "Poubelle intelligente",
+  description: "Poubelle automatique avec capteur de distance.",
+  image: "./images/imgpoubelle.HEIC",
+  longDescription: "Cette poubelle intelligente est conçue pour s’ouvrir automatiquement lorsqu’une main ou un objet s’approche. Grâce à un capteur de distance connecté à une carte Arduino, le système détecte la présence d’un utilisateur et active un servomoteur qui soulève le couvercle. Des LEDs bleue et verte permettent d’indiquer l’état de fonctionnement du dispositif, tandis qu’un buzzer peut signaler certaines actions. Réalisée avec une structure en carton pour le prototypage, cette poubelle met en avant l’intégration simple entre capteurs, actionneurs et programmation. Ce projet est idéal pour l’apprentissage de l’électronique, de l’automatisation et des bases de la robotique avec Arduino.",
+  technos: ["01 Carte Arduino Uno", "01 Capteur de distance (ultrason)", "01 Servomoteur", "02 LEDs (bleue et verte)", "01 Buzzer", "01 Pile 9V", "Fils de connexion", "Structure en carton"],
+  github: "./Fichiers/Brascode.pdf",
+  video: "./Fichiers/elu.MOV"
+ }
 ];
 
 
