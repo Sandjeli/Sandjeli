@@ -39,7 +39,7 @@ const Intermediaires = [
   image: "./images/imgpoubelle.HEIC",
   longDescription: "Cette poubelle intelligente est conçue pour s’ouvrir automatiquement lorsqu’une main ou un objet s’approche. Grâce à un capteur de distance connecté à une carte Arduino, le système détecte la présence d’un utilisateur et active un servomoteur qui soulève le couvercle. Des LEDs bleue et verte permettent d’indiquer l’état de fonctionnement du dispositif, tandis qu’un buzzer peut signaler certaines actions. Réalisée avec une structure en carton pour le prototypage, cette poubelle met en avant l’intégration simple entre capteurs, actionneurs et programmation. Ce projet est idéal pour l’apprentissage de l’électronique, de l’automatisation et des bases de la robotique avec Arduino.",
   technos: ["01 Carte Arduino Uno", "01 Capteur de distance (ultrason)", "01 Servomoteur", "02 LEDs (bleue et verte)", "01 Buzzer", "01 Pile 9V", "Fils de connexion", "Structure en carton"],
-  github: "./Fichiers/Brascode.pdf",
+  github: "./Fichiers/Poubellecode.pdf",
   video: "./Fichiers/elu.MOV"
  }
 ];
